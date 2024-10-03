@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+     <!-- Oder of our webiste
+    <head></head>
+    <main></main>
+    <footer></footer> -->
+    <header>
+        <a href="#"> 
+            <img src="img/beetroot-academy-logo.png" width="60px" alt="Logo">
+        </a>
+        <nav>
+            <ul>
+                <li>
+                    <a href="#">Products or pages</a>
+                </li>
+                <li>
+                    <a href="#">Products or pages</a>
+                </li>
+                <li>
+                    <a href="#">Products or pages</a>
+                </li>
+            </ul>
+        </nav>
+        <div>
+            <button>Sign in </button>
+            <button>Sign up </button>
+        </div>
+        <div>
+            <h2>Input types</h2>
+    <form action="#"> <!-- block level element  -->
+        <input type="text" name="user_name" id="">
+        <input type="tel" name="user_phone" id="">
+        <input type="number" name="user_age" id="">
+        <input type="date" name="user_birthday" id=""> <!-- really difficult to customize  -->
+        <input placeholder="write here placeholder" type="text">
+        <input type="checkbox" name="user_agree" id="">
+        <input type="radio" name="user_chooses">
+        <input type="color">
+        <select name="user_role" id="">
+            <option value="user_role_1">Product Manager</option> <!-- Values are use to link to the backend, so it's better to use value than directly the name -->
+            <option value="user_role_2">Designer</option>
+            <option value="user_role_3">FrontEnd</option>
+            <option value="user_role_4">BackEnd</option>
+            <option value="user_role_5">FullStack</option>
+
+        <input type="checkbox" name="option">
+        <label for="mushroom">mushroom</label>
+    </form> 
+        </div>
+    </header>
+    <main>
+    <h1>Semantic -> with meaning</h1>
+    <p>for text</p>
+    <a href="#">for a link</a>
+    <ul>
+        <li>Unordered list ex</li>
+        <li>Unordered list ex</li>
+    </ul>
+    <ol>
+        <li>Ordered list ex</li>
+        <li>Ordered list ex</li>
+    </ol>
+
+    <h1>Non semantic -> we don't know what is inside or purpose.</h1>
+    <div>
+        <p>Wrapper to build block-level elements </p>
+        <p>Example </p>
+    </div>
+    <span>
+        <p>Wrapper to build in-line elements</p>
+        <p>Example</p>
+    </span>
+
+    <div>
+        <p>Lorem <Span>ipsum</Span> </p>
+    </div>
+
+    <!-- Html 5 tags -->
+     <h2>Html Tags:</h2>
+    <ul> 
+        <li>Header</li> <!-- top of the page, non scrollable sometimes -->
+        <li>nav</li> <!-- navigation -->
+        <li>article</li> <!-- for news websites, to hold articles -->
+        <li>main</li> <!-- after header, holds the content of our website -->
+        <li>footer</li> <!-- for the last part of our website -->
+        <li>aside</li> <!-- aside sections, in a article, aside articles or related articles -->
+        <li>figure</li> <!-- picture context -->
+        <li>figcaption</li> <!-- For media content. Useful for SEO, readers, etc  -->
+        <li>
+            <p>Time: The event will take place on <time datetime="2024-10-03">2024-10-03</time></p> <!-- Screen readers will pronounce this better -->
+        </li>
+        <h4>Media content</h4>
+        <li>video</li> 
+        <li>img</li> 
+        <li>picture</li> 
+        <li>iframe</li> <!-- to display another website inside your website  -->
+    </ul>
+    <article> 
+        <!-- we can use this sectiosn more than once -->
+        <header></header>
+        <main>
+            <figure>
+                <img src="#" alt="">
+                <figcaption>Pic.1 Picture of the moon</figcaption>
+            </figure>
+        </main>
+        <footer></footer>
+    </article>
+
+    <h2>Nesting problems</h2>
+    <ul>
+        <li>Never put an ancor inside an ancor</li>
+        <li>Div is not allawed as a child component</li> 
+        <li>Inside picture we can only find picture and source</li> 
+        <li></li>
+    </ul>
+   
+    <h2>Commun Nesting</h2> 
+    <ul>
+        <li>
+            <a href="#">
+                <img src="img/beetroot-academy-logo.png" width="30px" alt="">
+            </a>
+        </li>
+        <li>
+            <a href="3">
+               <picture>
+                <source src="" type="">
+                <img src="img/beetroot-academy-logo.png" width="30px" alt="">
+               </picture>
+            </a>
+        </li>
+        <li>
+            <video>
+                <source src="video/Screenrecording.mov" type="" width="30px">
+            </video>
+        </li>
+            <iframe src="" frameborder="0"></iframe>
+    </ul>
+
+
+</main>
+<footer>
+    <h4>Get in conctact</h4>
+    <a href="http://google.com">Link to google</a>
+    <a href="tel:+32632183407">Call me at 632183407</a>
+    <a href="mail@mail.com">mail me at mail@mail.com</a>
+</footer>
+
+</body>
+</html>
