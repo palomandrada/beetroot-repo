@@ -1,3 +1,31 @@
-*{margin: 0; padding: 0;}
+*{margin: 20px; padding: 0px;}
 
-h1 
+h1{ 
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 28px;
+}
+
+h2{ 
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 24px;
+}
+
+h3{ 
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+
+.date{ 
+
+    font-family: 'Times New Roman', Times, serif;
+    color: gray;
+    font-size: 14px;
+}
+
+.post{ 
+
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    font-size: 16px;
+    font-size: thick;
+}
