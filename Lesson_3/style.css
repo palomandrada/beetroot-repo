@@ -1,8 +1,22 @@
-*{margin: 20px; padding: 0px;}
+
+nav, footer {
+    background-color: darkolivegreen;
+    padding: 10px;
+}
+main {
+    margin: 20px; padding: 0px;
+}
+
+a {
+    font-family:Arial, Helvetica, sans-serif;
+    text-decoration:solid;
+    color: white;
+}
 
 h1{ 
     font-family: Arial, Helvetica, sans-serif;
     font-size: 28px;
+    color: darkolivegreen;
 }
 
 h2{ 
@@ -28,4 +42,24 @@ h3{
     color: black;
     font-size: 16px;
     font-size: thick;
+}
+
+.profile_pic {
+    width: 200px;
+}
+
+.logo {
+    width: 60px;
+}
+
+.footer {
+    padding: 10px;
+}
+
+.contact_title {
+    color: white;
+}
+
+.contact {
+    padding-right: 60px;
 }
