@@ -9,24 +9,16 @@
     <body>
         <header>
            <nav>
-            <ul>
-                <li>
-                    <a href="#">About me</a>
-                </li>
-                <li>
-                    <a href="#">Experience</a>
-                </li>
-                <li>
-                    <a href="#">Education</a>
-                </li>
-                <li>
-                    <a href="#">Get in touch</a>
-                </li>
-            </ul>
+            <div id="navigation">
+                <a class="navigation" id="#about" href="#about">About me</a>
+                <a class="navigation" id="#experience" href="#experience">Experience</a>
+                <a class="navigation" id="#education" href="#education">Education</a>
+                <a class="navigation" id="#get_in_touch" href="#get_in_touch">Get in touch</a>
+            </div>
         </header>
         <main>
             <h1>Hi there! Welcome to my CV</h1>
-            <div class="about">
+            <div class="about_me" id="about">
                 <h2>About me</h2>
                 <div class="top_info">
                     <h3>Paloma Martinez Andrada</h3>
@@ -36,7 +28,7 @@
                 </div>
                 <img class="profile_pic" src="img/Paloma.jpg" alt="Paloma Profile Picture">
             </div>
-            <div class="experience">
+            <div class="experience_section" id="experience">
                 <h2>Experience</h2>
                     <div class="apptweak">
                         <img class="icon" src="img/apptweak-logo.png" width="30px" alt="Apptweak logo">
@@ -62,7 +54,7 @@
                             <p class="date">feb. 2020 - mar. 2020</p>
                     </div>
             </div>
-            <div class="education">
+            <div class="education_section" id="education">
                 <h2>Education</h2>
                     <div class="Beetroot Academy">
                         <img class="icon" src="img/beetroot-academy-logo.png"width="30px" alt="Beetroot Academy logo">
@@ -79,12 +71,13 @@
             </div>
         </main>
         <footer>
-            <h2 class="contact_title">Get in contact</h2>
+            <h2 class="get_in_touch" id="get_in_touch">Get in touch</h2>
             <div>
                 <a class="contact" href="#">Link to my portfolio</a>
                 <a class="contact" href="tel:+34622183406">Call me at 622 183 406</a>
                 <a class="contact" href="paloma.mtnez20@gmail.com">Mail me at paloma.mtnez20@gmail.com</a>
             </div>
+            <a class="back_top" id="#navigation" href="#navigation">Go back to the top</a>
         </footer>
     </body>
 </html>
