@@ -57,9 +57,9 @@
  box-sizing: border-box;
 }
 
-.box:hover {
+/*.box:hover {
 
-}/* do not height for big elements. Only small icons like icons */ 
+}do not height for big elements. Only small icons like icons */ 
 /* important to set min-height and min-weight  */ 
 
 /* Use padding to hugh elements */
