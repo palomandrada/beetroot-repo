@@ -1,0 +1,78 @@
+
+ /* Applys to everything -> recommendation is NOT to used it */
+* {
+    color: red;
+}
+
+ /* Selector by ID */
+ #id_name {
+    color: red;
+ }
+
+  /* inherit is to aply styles from parent */
+  a {
+    color: inherit;
+  }
+
+  /* Selector by class name */
+.class_name {
+    color: blue;
+}
+
+ /* IMPORTANT -> if two classes for 1 element, last element will be applied 
+            -> In order of importance 
+                10O: ID
+                10: class
+                1. Tag
+                
+
+    */ 
+
+.class_1.class_2 {
+/* The weight of this selector is 20 */
+/* we need at least 10 class names to overwrite an ID */
+    background-color: aquamarine;
+}
+
+.class_1.class_2.class_3 {
+    /* The weight of this selector is 20 */
+        background-color: aquamarine;
+    }
+
+#id_name.class_1 {
+/* The weight of this selector is 110 */
+/* No space clases means that the class will be applied to this specific element */
+background-color: aquamarine;
+}
+
+#id_name .class_1 {
+    /* The weight of this selector is 110 */
+    /* With space clases means that the class will be to all nested classes */
+    background-color: aquamarine;
+    }
+
+.class_1 + .class_2 {
+     /* + is "after" -> Apply styles to .class_2 coming after .class_1 */
+        background-color: aquamarine;
+    }
+
+.class_1 > .class_2 {
+    /* > is "inside" -> Apply to .class_2 inside .class_1 */
+        background-color: aquamarine;
+    }
+
+.class_1 ~ .class_2 { /*(it helps to red it from right to left */
+    /* > is "after" -> Apply to .class_2 after .class_1. DIfference with + is that elements can be in between*/
+            background-color: aquamarine;
+    }
+
+input[type="text"] {
+    border: 3px solid green;
+}
+
+input[type]{
+/* styles will apply for elements that have  */ 
+    border: 3px solid green;
+}
+   
+

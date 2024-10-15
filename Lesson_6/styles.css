@@ -1,0 +1,122 @@
+
+.page_wrapper {
+    background: #3399CC;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #ffffff;
+    max-width: 100%;
+    padding: 60px 135px;
+    border: 25px solid #2B81AC;
+}
+.title {
+    font-size: 21px;
+    display: flex;
+    gap: 4px;
+    align-items: flex-end;
+    text-transform: capitalize;
+
+}
+
+.countries_box {
+    cursor: pointer;
+    text-transform: capitalize;
+}
+
+.degrees {
+    font-size: 22px;
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    color: #FFFFFFB2;
+}
+
+/*Line 1 -----------------------------------------------*/
+
+.line_1 {
+    display: flex;
+    font-size: 20px;
+    text-align: center;
+    border: 2px solid #FFFFFF;
+}
+  
+.lisbon {
+    flex: 2;
+    background: #3399CC;
+}
+
+.paris {
+    flex: 1;
+    background: #33CCCC;
+}
+
+.belgrade {
+    flex: 1;
+    background: #996699;
+}
+
+/*Line 2 -----------------------------------------------*/
+
+.line_2 {
+    display: flex;
+    font-size: 20px;
+    text-align: center;
+    border: 2px solid #FFFFFF;
+}
+  
+.venice {
+    flex: 1;
+    background: #C24747;
+}
+
+.tel_avive {
+    flex: 1;
+    background: #E2674A;
+}
+
+.cair {
+    flex: 1;
+    background: #FFCC66;
+}
+
+.new_york {
+    flex: 1;
+    background: #99CC99;
+}
+
+/*Line 3 -----------------------------------------------*/
+
+.line_3 {
+    display: flex;
+    font-size: 20px;
+    text-align: center;
+    border: 2px solid #FFFFFF;
+}
+  
+.new_delhi {
+    flex: 1;
+    background: #669999;
+}
+
+.san_francisco {
+    flex: 2;
+    background: #CC6699;
+}
+
+.tokio {
+    flex: 1;
+    background: #339966;
+}
+
+/*Line 4 -----------------------------------------------*/
+
+.line_4 {
+    display: flex;
+    font-size: 20px;
+    text-align: center;
+    border: 2px solid #FFFFFF;
+}
+  
+.sydney {
+    flex: 1;
+    background: #666699;
+
+}

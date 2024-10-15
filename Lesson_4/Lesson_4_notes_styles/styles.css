@@ -17,7 +17,7 @@
 
 .bold_title {
     /* color: rgba(53, 3, 30,0.5) Used for transparency*/
-    color: rgb(53, 3, 30)
+    color: rgb(53, 3, 30);
     text-align: center;
     font-weight: bold;
     letter-spacing: 20px;
@@ -96,9 +96,6 @@ ul{
 .nav_item {
     color: gray;
     font-size: 14px;
-    line-height: 20px; /* 1 means equal, 2 double*/
-
-    display
+    line-height: 20px; 
 }
-
 

@@ -1,0 +1,76 @@
+.card {
+    width: 24%;
+    background-color: pink;
+    height: 100px;
+    text-align: center;
+    font-size: 50px;
+    color: white;
+    font-weight: lighter;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.card:last-child {
+    margin-right: 0;
+}
+
+.card:first-child {
+    margin-right: 0;
+}
+
+.card:last-of-type {
+    margin-right: 0;
+} /* last of a list collection */ 
+
+.card:nth-child(1) {
+    margin-right: 0;
+}
+.card:nth-child(2){
+    margin-right: 0;
+}
+.card:nth-child(3){
+    margin-right: 0;
+ }
+/* :nth inner child calcular*/ 
+
+.card:nth-child(4n+4){
+    margin-right: 0;
+}
+
+.card:nth-child(even){
+    margin-right: 0;
+}
+
+/* ------------------------------------------------------------- */ 
+
+.box1 {
+ background: coral;
+ color: white;
+ font-size: 1.5em; /*1.5 from be parent for em. html for rem*/
+ width: 100px;
+ height: 100px;
+ padding: 20px;
+ margin: 20px;
+ border: 5px solid lightblue;
+ font-family: Arial, Helvetica, sans-serif;
+
+ box-sizing: border-box;
+}
+
+.box:hover {
+
+}/* do not height for big elements. Only small icons like icons */ 
+/* important to set min-height and min-weight  */ 
+
+/* Use padding to hugh elements */
+/* Use margin to have distance between elements */
+/* For meain sections vw or vh, work as percentages */
+/* container: To restric the size of a section  */
+
+.container { 
+    background: lightblue;
+    max-width: 1126px;
+    width: 90%;
+    margin: 0 auto; /* to align center */
+
+}
