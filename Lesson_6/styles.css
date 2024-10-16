@@ -1,4 +1,3 @@
-
 .page_wrapper {
     background: #3399CC;
     font-family: Arial, Helvetica, sans-serif;
@@ -6,6 +5,9 @@
     max-width: 100%;
     padding: 60px 135px;
     border: 25px solid #2B81AC;
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
 }
 .title {
     font-size: 21px;
@@ -16,9 +18,11 @@
 
 }
 
-.countries_box {
+.main_box {
     cursor: pointer;
     text-transform: capitalize;
+    background: #ffffff;
+    padding: 2px;
 }
 
 .degrees {
@@ -29,13 +33,23 @@
     color: #FFFFFFB2;
 }
 
+.country_box {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    justify-content: center;
+    padding: 26px 0px;
+
+}
+
 /*Line 1 -----------------------------------------------*/
 
 .line_1 {
     display: flex;
     font-size: 20px;
     text-align: center;
-    border: 2px solid #FFFFFF;
+    padding-bottom: 2px;
+    gap: 2px;
 }
   
 .lisbon {
@@ -59,7 +73,8 @@
     display: flex;
     font-size: 20px;
     text-align: center;
-    border: 2px solid #FFFFFF;
+    padding-bottom: 2px;
+    gap: 2px;
 }
   
 .venice {
@@ -88,7 +103,8 @@
     display: flex;
     font-size: 20px;
     text-align: center;
-    border: 2px solid #FFFFFF;
+    padding-bottom: 2px;
+    gap: 2px;
 }
   
 .new_delhi {
@@ -101,7 +117,7 @@
     background: #CC6699;
 }
 
-.tokio {
+.tokyo {
     flex: 1;
     background: #339966;
 }
@@ -112,7 +128,7 @@
     display: flex;
     font-size: 20px;
     text-align: center;
-    border: 2px solid #FFFFFF;
+    gap: 2px;
 }
   
 .sydney {
