@@ -1,0 +1,142 @@
+body {
+    font-family: "Poppins", sans-serif;
+}
+
+.container {
+    max-width: 1126px;
+    width: 90%; 
+    margin: 0 auto;
+
+}
+
+/* img + buttons -------------------------------------------------------*/
+
+img {
+    width: 100%;
+    display: block;
+}
+
+.logo_link {
+    width: 174px;
+}
+
+button {
+    background: none;
+    outline: none;
+    border: none;
+}
+
+.btn {
+    padding: 15px 20px;
+    text-transform: capitalize;
+    text-align: center;
+    border: 1px solid #BCD0E5;
+    border-radius: 4px;
+    color: #22343D;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.btn.accent {
+    color: white;
+    background-color: #FF9900;
+    border: none;
+}
+
+.btn:hover {
+    border: 1px solid #e4e4e4;
+    background-color: #e4e4e4;;
+}
+
+.btn.accent:hover {
+    border: none;
+    background-color: #ffa41b;
+}
+
+.btn:first-child{
+    margin-right: 12px;
+    margin-left: 60px;
+}
+
+/* NAVIGATION -------------------------------------------------------*/
+
+a {
+    color: inherit;
+    text-decoration: none;
+    display: inline-block;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+.navigation,  .header_actions, .logo_link {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.nav_list li {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 35px;
+}
+
+.nav_list li:last-child {
+    margin-right: 0;
+}
+
+.navigation {
+    width: 60%;
+    text-align: right;
+
+}
+
+.nav_item:hover {
+    color: #ffa41b;
+}
+
+/* HERO -------------------------------------------------------*/
+
+.header {
+    padding: 35px 0 17px;
+
+}
+
+.hero {
+    font-size: 0;
+}
+
+.hero_title {
+    font-size: 44px;
+    line-height: 55px;
+    font-weight: bold;
+    color: black;
+    margin-bottom: 30px;
+}
+.col {
+    display: inline-block; 
+
+}
+
+.col:first-child {
+    width: 45%;
+}
+
+.col:last-child {
+    width: 55%;
+}
+
+.hero_desc {
+    color: #544837;
+    font-size: 18px;
+    line-height: 28px;
+    width: 100%;
+    max-width: 458px;
+    font-weight: lighter;
+}
+
+.hero_img {
+    max-width: 605px;
+    width: 100%;
+}
