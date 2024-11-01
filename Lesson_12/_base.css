@@ -1,0 +1,60 @@
+/* COLOR ----------------------------------*/
+/* BUTTON STYES  ----------------------------------*/
+/* FORM STYLES ----------------------------------*/
+/*ICONS ------------------------------------------*/
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 0px;
+  padding: 0px;
+}
+
+.container {
+  max-width: 1126px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+img {
+  width: 100%;
+  display: block;
+}
+
+p {
+  font-family: Arial, Helvetica, system-ui, sans-serif;
+}
+
+h2, p, i {
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  border-bottom: 1px solid rgba(188, 208, 229, 0.5);
+  padding-bottom: 120px;
+}
+
+/* NAVIGATION -------------------------------------------------------*/
+.navigation {
+  margin: 0px;
+  padding-right: 60px;
+}
+
+.nav .btn {
+  margin-right: 12px;
+}
+
+.nav_list {
+  margin: 0px;
+  padding: 0px;
+}
+
+.nav_list li {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 35px;
+}
+
+.navigation {
+  width: 60%;
+  text-align: right;
+}

@@ -1,0 +1,171 @@
+/* Add big section classes in here. Like hero, professionals, etc*/ 
+@import "vars.scss";
+@import "vars.scss";
+  /* FIRST SECTION -------------------------------------------------------*/
+  .header {
+    padding: 35px 0 17px;
+  }
+  
+  .hero {
+    padding-top: 40px;
+    font-size: 0;
+  }
+  
+  .main_title {
+    font-size: 44px;
+    line-height: 55px;
+    font-weight: bold;
+    color:$dark_base;
+  }
+  
+  
+  .section_desc {
+    color: $dark_base;
+    font-size: 18px;
+    line-height: 28px;
+    width: 100%;
+    max-width: 458px;
+    font-weight: 400;
+    padding: 30px 0 30px 0;
+  }
+  
+  
+  .subtle_text {
+    display: inline-block;
+    vertical-align: middle;
+    text-decoration: underline;
+    font-size: 16px;
+    line-height: 18px;
+  }
+  
+  .video_link {
+    color: $ornametal_orange;
+    width: 180px;
+    font-size: 12px;
+    padding: 9px 20px;
+  }
+  
+  /* BANNER SUPERPOWERS-------------------------------------------------------*/
+  .banner, .professionals {
+    padding-top: 120px;
+    font-size: 0;
+  }
+  
+  .banner_title {
+    font-size: 35px;
+    line-height: 48px;
+    font-weight: bold;
+    color:$dark_base;
+    margin: auto;
+    text-align: center;
+    max-width: 520px;
+    padding-bottom: 60px;
+  }
+  
+  .pointer {
+    background-color: $ornametal_purple;
+  }
+  
+  .wave {
+    background-color: $ornametal_yellow;
+  }
+  .heart {
+    background-color: $ornametal_red;
+  }
+  .time {
+    background-color: $ornametal_blue;
+  } 
+  
+  .col.card {
+    max-width: 270px;
+    width: 25%;
+  }
+  
+  .description {
+    max-width: 200px;
+    padding-top: 28px;
+  }
+  
+  .desc_title {
+    font-size: 22px;
+    font-weight: bold;
+    margin: 0;
+    padding-bottom: 12px;
+  }
+  
+  .desc {
+    font-size: 16px;
+    font-weight: 400;
+    margin: 0;
+  }
+  
+  .banner_actions {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 60px;
+  }
+  
+  /* DESIGN + MARKETERS -------------------------------------------------------*/
+  .professionals {
+    margin-top: 120px;
+  }
+  
+  .professionals .image {
+    max-width: 520px;
+    width: 100%;
+  }
+  
+  .section_title {
+    font-size: 36px;
+    font-weight: bold;
+    color: $dark_base;
+    width: 520px;
+    padding-bottom: 30px;
+  }
+  
+  .point .title {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 8px;
+  
+  }
+  
+  .point {
+    max-width: 480px;
+    padding-top: 28px;
+  }
+  
+  /* MANAGERS -------------------------------------------------------*/
+  .checklist {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .check {
+    height: 12px;
+    width: 16px;
+    padding: 11px 9px;
+    border-radius: 14px;
+    background-color: $ornametal_orange;
+  }
+  
+  /* FOOTER ------------------------------------------------------------------*/
+
+  
+  .footer {
+    padding-top: 120px;
+    padding-bottom: 80px;
+  }
+  
+  .footer_nav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+  }
+  
+  .footer_nav .col {
+    display: inline-block;
+    width: 25%;
+    padding: 0;
+  }

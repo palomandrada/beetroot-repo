@@ -1,0 +1,174 @@
+/* Add big section classes in here. Like hero, professionals, etc*/
+/* COLOR ----------------------------------*/
+/* BUTTON STYES  ----------------------------------*/
+/* FORM STYLES ----------------------------------*/
+/*ICONS ------------------------------------------*/
+/* COLOR ----------------------------------*/
+/* BUTTON STYES  ----------------------------------*/
+/* FORM STYLES ----------------------------------*/
+/*ICONS ------------------------------------------*/
+/* FIRST SECTION -------------------------------------------------------*/
+.header {
+  padding: 35px 0 17px;
+}
+
+.hero {
+  padding-top: 40px;
+  font-size: 0;
+}
+
+.main_title {
+  font-size: 44px;
+  line-height: 55px;
+  font-weight: bold;
+  color: black;
+}
+
+.section_desc {
+  color: black;
+  font-size: 18px;
+  line-height: 28px;
+  width: 100%;
+  max-width: 458px;
+  font-weight: 400;
+  padding: 30px 0 30px 0;
+}
+
+.subtle_text {
+  display: inline-block;
+  vertical-align: middle;
+  text-decoration: underline;
+  font-size: 16px;
+  line-height: 18px;
+}
+
+.video_link {
+  color: #FF9900;
+  width: 180px;
+  font-size: 12px;
+  padding: 9px 20px;
+}
+
+/* BANNER SUPERPOWERS-------------------------------------------------------*/
+.banner, .professionals {
+  padding-top: 120px;
+  font-size: 0;
+}
+
+.banner_title {
+  font-size: 35px;
+  line-height: 48px;
+  font-weight: bold;
+  color: black;
+  margin: auto;
+  text-align: center;
+  max-width: 520px;
+  padding-bottom: 60px;
+}
+
+.pointer {
+  background-color: #7752BE;
+}
+
+.wave {
+  background-color: #FAB005;
+}
+
+.heart {
+  background-color: #F03E3D;
+}
+
+.time {
+  background-color: #4DADF7;
+}
+
+.col.card {
+  max-width: 270px;
+  width: 25%;
+}
+
+.description {
+  max-width: 200px;
+  padding-top: 28px;
+}
+
+.desc_title {
+  font-size: 22px;
+  font-weight: bold;
+  margin: 0;
+  padding-bottom: 12px;
+}
+
+.desc {
+  font-size: 16px;
+  font-weight: 400;
+  margin: 0;
+}
+
+.banner_actions {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 60px;
+}
+
+/* DESIGN + MARKETERS -------------------------------------------------------*/
+.professionals {
+  margin-top: 120px;
+}
+
+.professionals .image {
+  max-width: 520px;
+  width: 100%;
+}
+
+.section_title {
+  font-size: 36px;
+  font-weight: bold;
+  color: black;
+  width: 520px;
+  padding-bottom: 30px;
+}
+
+.point .title {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.point {
+  max-width: 480px;
+  padding-top: 28px;
+}
+
+/* MANAGERS -------------------------------------------------------*/
+.checklist {
+  display: flex;
+  gap: 20px;
+}
+
+.check {
+  height: 12px;
+  width: 16px;
+  padding: 11px 9px;
+  border-radius: 14px;
+  background-color: #FF9900;
+}
+
+/* FOOTER ------------------------------------------------------------------*/
+.footer {
+  padding-top: 120px;
+  padding-bottom: 80px;
+}
+
+.footer_nav {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+.footer_nav .col {
+  display: inline-block;
+  width: 25%;
+  padding: 0;
+}

@@ -1,0 +1,50 @@
+/* Add states in here.  */ 
+@import "vars.scss";
+
+.btn { 
+
+    &:hover {
+        border: $btn_border;
+        background-color: $btn_background;
+    }
+
+    &.accent { /* same thing as .btn.accent*/
+        color: $base;
+        background-color: $accent;
+        border: none;
+        display: inline-block;
+    }
+
+    &.accent:hover { /*no dot recomment to go dipper than 5 levels*/
+        border: none;
+        background-color: $accent_hover;
+    }
+}
+
+.col {
+
+    &:first-child {
+        width: 45%;
+  }
+    &:last-child {
+    width: 45%;
+    padding-left: 10%;
+  }
+}
+
+.email_sign {
+    &:hover {
+        border: $form_border;
+  }
+    &:active, .email_sign:focus, .email_sign::selection {
+        outline:$form_border;
+        background-color: $subtle;
+        initial-value: none;
+}
+} 
+
+.nav_item {
+    &:hover {
+    color: $accent;
+  }
+}
