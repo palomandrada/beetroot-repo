@@ -44,6 +44,10 @@
     font-size: 12px;
     padding: 9px 20px;
   }
+
+  .fa-play {
+    font-size: 16px;
+  }
   
   /* BANNER SUPERPOWERS-------------------------------------------------------*/
   .banner, .professionals {
@@ -62,17 +66,17 @@
     padding-bottom: 60px;
   }
   
-  .pointer {
+  .icon.fa-arrow-pointer {
     background-color: $ornametal_purple;
   }
   
-  .wave {
+  .icon.fa-stumbleupon {
     background-color: $ornametal_yellow;
   }
-  .heart {
+  .icon.fa-heart {
     background-color: $ornametal_red;
   }
-  .time {
+  .icon.fa-hourglass-half {
     background-color: $ornametal_blue;
   } 
   
@@ -140,14 +144,19 @@
   .checklist {
     display: flex;
     gap: 20px;
+    align-items: center;
   }
   
-  .check {
+  .fa-check {
+    font-size: 18px;
+    color: $base;
     height: 12px;
     width: 16px;
     padding: 11px 9px;
     border-radius: 14px;
     background-color: $ornametal_orange;
+    display: flex;
+    align-items: center;
   }
   
   /* FOOTER ------------------------------------------------------------------*/

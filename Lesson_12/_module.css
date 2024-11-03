@@ -49,6 +49,10 @@
   padding: 9px 20px;
 }
 
+.fa-play {
+  font-size: 16px;
+}
+
 /* BANNER SUPERPOWERS-------------------------------------------------------*/
 .banner, .professionals {
   padding-top: 120px;
@@ -66,19 +70,19 @@
   padding-bottom: 60px;
 }
 
-.pointer {
+.icon.fa-arrow-pointer {
   background-color: #7752BE;
 }
 
-.wave {
+.icon.fa-stumbleupon {
   background-color: #FAB005;
 }
 
-.heart {
+.icon.fa-heart {
   background-color: #F03E3D;
 }
 
-.time {
+.icon.fa-hourglass-half {
   background-color: #4DADF7;
 }
 
@@ -145,14 +149,19 @@
 .checklist {
   display: flex;
   gap: 20px;
+  align-items: center;
 }
 
-.check {
+.fa-check {
+  font-size: 18px;
+  color: white;
   height: 12px;
   width: 16px;
   padding: 11px 9px;
   border-radius: 14px;
   background-color: #FF9900;
+  display: flex;
+  align-items: center;
 }
 
 /* FOOTER ------------------------------------------------------------------*/
