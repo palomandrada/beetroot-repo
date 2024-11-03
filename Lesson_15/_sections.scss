@@ -1,0 +1,110 @@
+@import "vars.scss";
+
+.hero_section {
+    background-color: $background;
+    padding-top: 144px;
+    padding-bottom: 175px;
+}
+
+.hero {
+    display: flex;
+    gap: 130px; 
+    align-items: center;
+
+}
+
+.hero .title {
+    font-size: 46px;
+    padding-bottom: 10px;
+    letter-spacing: -1px;
+}
+
+.col {
+    flex: 1; 
+}
+
+.cards {
+    display: flex;
+    gap: 30px;
+}
+
+.banner {
+    padding-top: 120px;
+    padding-bottom: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+.banner .col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.banner_main_title {
+    color: $default-text;
+    font-size: 38px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: -0.5px;
+    padding-bottom: 30px;
+}
+
+.banner .title {
+    font-size: 20px;
+    padding-bottom: 5px;
+}
+
+.banner_icon {
+    padding-bottom: 20px;
+    width: 64px;
+    height: 64px;
+    flex-shrink: 0;
+}
+
+.banner .description {
+    text-align: center;
+}
+.years {
+    background-color: $background;
+}
+
+.years .cards{
+    gap:125px; 
+}
+
+.kpi {
+    display: flex;
+}
+.kpi .title{ 
+    color: $default-text;
+    font-size: 46px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.icon {
+    color: $accent;
+    font-size: 46px;
+}
+
+.container_medium .title {
+    font-size: 38px;
+    padding-bottom: 30px;
+}
+.col2 {
+    flex: 2;
+}
+
+.logo_list {
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    gap: 73px;
+    align-items: center;
+    padding-top: 60px;
+}
