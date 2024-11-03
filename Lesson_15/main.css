@@ -111,7 +111,7 @@ header {
   background-color: #2557AB;
 }
 .btn.secondary_action:hover {
-  background-color: #13253A;
+  background-color: #11364E;
 }
 
 .title {
@@ -321,4 +321,71 @@ header {
 .start .description {
   color: #ffff;
   text-align: center;
+}
+
+.contact {
+  padding-top: 140px;
+  padding-bottom: 140px;
+  background-color: #11364E;
+}
+
+.form_list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form_title {
+  color: #ffff;
+  text-align: center;
+  font-size: 38px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.5px;
+  text-transform: capitalize;
+  padding-bottom: 30px;
+}
+
+input {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-color: #11364E;
+  border-bottom: 1px solid #ffff;
+  outline: none;
+  width: 371px;
+  height: 28px;
+  flex-shrink: 0;
+  margin-bottom: 40px;
+}
+
+input.message {
+  height: 120px;
+  margin-bottom: 0;
+}
+
+.input_text {
+  color: #ffff;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  margin-bottom: 10px;
+  text-transform: capitalize;
+}
+
+footer {
+  background-color: #13253A;
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+
+.copywrites {
+  color: #ffff;
+  text-align: center;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
 }
