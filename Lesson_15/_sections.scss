@@ -6,11 +6,10 @@
     padding-bottom: 175px;
 }
 
-.hero {
+.hero, .relax {
     display: flex;
     gap: 130px; 
     align-items: center;
-
 }
 
 .hero .title {
@@ -71,6 +70,11 @@
     background-color: $background;
 }
 
+.years .container_small {
+    display: flex;
+    justify-content: center;
+}
+
 .years .cards{
     gap:125px; 
 }
@@ -107,4 +111,62 @@
     gap: 73px;
     align-items: center;
     padding-top: 60px;
+}
+
+.relax_section {
+    padding-top: 100px;
+    padding-bottom: 120px;
+}
+.check_icon {
+    color: $accent;
+    font-size: 16px;
+}
+
+.relax .title {
+    font-size: 38px;
+    width: 370px;
+    padding-bottom: 20px;
+}
+
+.list_item {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+
+}
+
+.list_text{ 
+    color: $default-text;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 27px; 
+}
+
+.start {
+    background-color: $accent;
+}
+
+.start .container_small {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.start .subtitle {
+    color: $light;
+}
+
+.start .title {
+    color: $light;
+    font-size: 46px;
+    letter-spacing: -1px;
+    padding-bottom: 10px;
+}
+
+.start .description {
+    color: $light;
+    text-align: center;
 }

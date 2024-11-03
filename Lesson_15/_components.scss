@@ -1,6 +1,6 @@
 @import "vars.scss";
 
-.main_action {
+.btn{
     width: 336px;
     height: 60px;
     flex-shrink: 0;
@@ -17,6 +17,20 @@
 
         &:hover {
             background-color: $accent_hover;
+        }
+}
+
+.btn.main_action{ 
+    background-color: $accent;
+        &:hover {
+            background-color: $accent_hover;
+        }
+}
+
+.btn.secondary_action{ 
+    background-color: $brand;
+        &:hover {
+            background-color: $dark;
         }
 }
 

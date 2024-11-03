@@ -1,5 +1,5 @@
 /* COLOR ----------------------------------*/
-.main_action {
+.btn {
   width: 336px;
   height: 60px;
   flex-shrink: 0;
@@ -14,8 +14,22 @@
   line-height: normal;
   cursor: pointer;
 }
-.main_action:hover {
+.btn:hover {
   background-color: #b14d2e;
+}
+
+.btn.main_action {
+  background-color: #FF7F57;
+}
+.btn.main_action:hover {
+  background-color: #b14d2e;
+}
+
+.btn.secondary_action {
+  background-color: #2557AB;
+}
+.btn.secondary_action:hover {
+  background-color: #13253A;
 }
 
 .title {
