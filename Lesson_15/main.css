@@ -48,6 +48,12 @@ a {
 header {
   background-color: #F4F6F7;
   padding-top: 40px;
+  padding-bottom: 40px;
+  position: fixed;
+  z-index: 10;
+  top: 0;
+  left: 0;
+  width: 100%;
 }
 
 .navigation {
@@ -95,9 +101,11 @@ header {
   font-weight: 600;
   line-height: normal;
   cursor: pointer;
+  transition: all 0.3s ease;
 }
 .btn:hover {
   background-color: #b14d2e;
+  transform: scale(1);
 }
 
 .btn.main_action {
@@ -148,6 +156,39 @@ header {
   padding-bottom: 20px;
 }
 
+input {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  outline: none;
+  border: none;
+  box-shadow: none;
+  border-bottom: 1px solid #ffff;
+  outline: none;
+  width: 371px;
+  height: 28px;
+  flex-shrink: 0;
+  margin-bottom: 40px;
+}
+input:hover {
+  border-bottom: 1px solid #FF7F57;
+}
+
+input.message {
+  height: 120px;
+  margin-bottom: 0;
+}
+
+.input_text {
+  color: #ffff;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  margin-bottom: 10px;
+  text-transform: capitalize;
+}
+
 /* COLOR ----------------------------------*/
 .hero_section {
   background-color: #F4F6F7;
@@ -157,7 +198,7 @@ header {
 
 .hero, .relax {
   display: flex;
-  gap: 130px;
+  gap: 90px;
   align-items: center;
 }
 
@@ -351,6 +392,9 @@ input {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
+  outline: none;
+  border: none;
+  box-shadow: none;
   background-color: #11364E;
   border-bottom: 1px solid #ffff;
   outline: none;
@@ -360,7 +404,7 @@ input {
   margin-bottom: 40px;
 }
 
-input.message {
+textarea {
   height: 120px;
   margin-bottom: 0;
 }

@@ -1,0 +1,41 @@
+/* COLOR ----------------------------------*/
+header {
+  background-color: #F4F6F7;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  position: fixed;
+  z-index: 10;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo_link {
+  width: 130px;
+}
+
+.nav_list {
+  margin: 0px;
+  padding: 0px;
+  display: flex;
+  gap: 50px;
+}
+
+.nav_list li {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.nav_item {
+  font-size: 14px;
+  color: #13253A;
+}
+.nav_item:hover {
+  color: #FF7F57;
+}

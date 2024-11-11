@@ -1,0 +1,66 @@
+body, html {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    margin: 0 auto;
+    width: 90;
+    max-width: 1440px;
+
+    padding: 120px;
+    background-color: lightblue;
+
+    
+}
+
+.box {
+    background-color: coral;
+    padding: 40px;
+    position: relative;
+    z-index: 2;
+}
+
+.item {
+    padding: 20px; 
+    text-align: center;
+    background-color: green;
+    position: absolute; 
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+}
+
+.child_item{
+    position: relative;
+    background-color: lightgreen;
+    padding: 20px;
+    position: relative;
+    z-index: 3;
+}
+
+.img {
+
+}
+
+h1 {
+
+}
+
+.hero{ 
+    background-image: url(./img/background.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    object-fit: cover;
+
+    min-height: 100vh;
+}
+
+.title {
+    color: #023835;
+    margin: 0;
+    transform: translate(-50%, -50%);
+}

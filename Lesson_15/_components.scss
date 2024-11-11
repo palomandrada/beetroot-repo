@@ -14,9 +14,12 @@
     font-weight: 600;
     line-height: normal;
     cursor: pointer;
+    transition: all 0.3s ease;
 
         &:hover {
             background-color: $accent_hover;
+            transform: scale(1);
+            
         }
 }
 
@@ -67,3 +70,37 @@
     line-height: 30px;
     padding-bottom: 20px;
 }
+
+input {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    outline: none;
+    border: none;
+    box-shadow: none;
+    border-bottom: 1px solid $light;
+    outline: none;
+    width: 371px;
+    height: 28px;
+    flex-shrink: 0;
+    margin-bottom: 40px;
+
+        &:hover {
+            border-bottom: 1px solid $accent;
+        }
+  }
+  
+  input.message {
+    height: 120px;
+    margin-bottom: 0;
+  }
+  
+  .input_text {
+    color: #ffff;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-bottom: 10px;
+    text-transform: capitalize;
+  }

@@ -8,7 +8,7 @@
 
 .hero, .relax {
     display: flex;
-    gap: 130px; 
+    gap: 90px; 
     align-items: center;
 }
 
@@ -199,6 +199,9 @@ input {
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
+    outline: none;
+    border: none;
+    box-shadow: none;
     background-color: $dark_background;
     border-bottom: 1px solid $light;
     outline: none;
@@ -208,7 +211,7 @@ input {
     margin-bottom: 40px;
 }
 
-input.message {
+textarea {
     height: 120px;
     margin-bottom: 0;
 }
