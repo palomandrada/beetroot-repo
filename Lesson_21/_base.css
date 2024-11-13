@@ -1,0 +1,12 @@
+body, html {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  margin: 0 auto;
+  width: 90;
+  max-width: 1440px;
+  padding: 120px;
+  background-color: lightblue;
+}

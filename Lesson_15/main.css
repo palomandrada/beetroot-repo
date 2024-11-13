@@ -105,7 +105,7 @@ header {
 }
 .btn:hover {
   background-color: #b14d2e;
-  transform: scale(1);
+  transform: scale(1.1);
 }
 
 .btn.main_action {
