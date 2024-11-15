@@ -115,7 +115,6 @@
 
 .relax_section {
     padding-top: 100px;
-    padding-bottom: 120px;
 }
 .check_icon {
     color: $accent;
@@ -195,36 +194,6 @@
     padding-bottom: 30px;
 }
 
-input {
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-    outline: none;
-    border: none;
-    box-shadow: none;
-    background-color: $dark_background;
-    border-bottom: 1px solid $light;
-    outline: none;
-    width: 371px;
-    height: 28px;
-    flex-shrink: 0;
-    margin-bottom: 40px;
-}
-
-textarea {
-    height: 120px;
-    margin-bottom: 0;
-}
-
-.input_text {
-    color: $light;
-    font-size: 13px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
-    margin-bottom: 10px;
-    text-transform: capitalize;
-}
 footer {
     background-color: $dark;
     padding-top: 16px;

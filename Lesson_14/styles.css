@@ -55,6 +55,19 @@
         }
     }
 
+    @keyframes fallDown {
+        0% 
+        { transform: translateY(0) rotate(0); 
+            opacity: 1; 
+            }
+
+        100%
+         { transform: translateY(110vh) rotate(360deg);
+             opacity: 0; 
+            }
+      }
+    
+
     .string {
         width: 2px;
         height: 100px;
@@ -71,15 +84,11 @@
         height: 10px;
         background-color: #ff6b6b;
         border-radius: 2px;
-        animation: floatDown linear infinite;
+        animation: fallDown linear infinite;
+        animation-duration: 6s;
         position: absolute;
       }
 
-      @keyframes fallDown {
-        0% { transform: translateY(0) rotate(0); opacity: 1; }
-        100% { transform: translateY(110vh) rotate(360deg); opacity: 0; }
-      }
-    
 
     .confetti:nth-child(1) { background-color: #ffd93d; left: 10%; animation-duration: 3s; }
     .confetti:nth-child(2) { background-color: #ff6b6b; left: 25%; animation-duration: 4s; }

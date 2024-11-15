@@ -1,5 +1,6 @@
 @import "vars.scss";
 
+/* Buttons ----------------------------------*/ 
 .btn{
     width: 336px;
     height: 60px;
@@ -37,6 +38,7 @@
         }
 }
 
+/* Text ----------------------------------*/ 
 .title {
     color: $default_text;
     font-style: normal;
@@ -71,6 +73,8 @@
     padding-bottom: 20px;
 }
 
+/* Form ----------------------------------*/ 
+
 input {
     -webkit-appearance: none;
     -moz-appearance: none;
@@ -78,7 +82,8 @@ input {
     outline: none;
     border: none;
     box-shadow: none;
-    border-bottom: 1px solid $light;
+    background-color: transparent;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.25);
     outline: none;
     width: 371px;
     height: 28px;
@@ -86,21 +91,61 @@ input {
     margin-bottom: 40px;
 
         &:hover {
-            border-bottom: 1px solid $accent;
+            border-bottom: 1px solid $light;
+        }
+
+
+        &:focus {
+            border-bottom: 1x solid $accent;
+            
+        }
+
+        &:focus, select, input:focus {
+            color: $light;
         }
   }
   
-  input.message {
-    height: 120px;
-    margin-bottom: 0;
-  }
-  
   .input_text {
-    color: #ffff;
+    color: $light;
     font-size: 13px;
     font-style: normal;
     font-weight: 500;
     line-height: normal;
     margin-bottom: 10px;
     text-transform: capitalize;
+  }
+
+  ::placeholder {
+    color:rgba(255, 255, 255, 0.25);
+    opacity: 1; /* Firefox */
+  }
+  
+  ::-ms-input-placeholder { /* Edge 12 -18 */
+    color: $accent;
+  }
+
+  textarea {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    outline: none;
+    border: none;
+    resize: none;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+    width: 371px;
+    height: 80px;
+
+        &:hover {
+            border-bottom: 1px solid $accent;
+        }
+
+        &:hover::placeholder {
+            color: $light;
+          }
+
+        &:focus, input:focus {
+            color: $light;
+        }
   }

@@ -1,4 +1,5 @@
 /* COLOR ----------------------------------*/
+/* Buttons ----------------------------------*/
 .btn {
   width: 336px;
   height: 60px;
@@ -34,6 +35,7 @@
   background-color: #11364E;
 }
 
+/* Text ----------------------------------*/
 .title {
   color: #13253A;
   font-style: normal;
@@ -68,6 +70,7 @@
   padding-bottom: 20px;
 }
 
+/* Form ----------------------------------*/
 input {
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -75,7 +78,8 @@ input {
   outline: none;
   border: none;
   box-shadow: none;
-  border-bottom: 1px solid #ffff;
+  background-color: transparent;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.25);
   outline: none;
   width: 371px;
   height: 28px;
@@ -83,12 +87,13 @@ input {
   margin-bottom: 40px;
 }
 input:hover {
-  border-bottom: 1px solid #FF7F57;
+  border-bottom: 1px solid #ffff;
 }
-
-input.message {
-  height: 120px;
-  margin-bottom: 0;
+input:focus {
+  border-bottom: 1x solid #FF7F57;
+}
+input:focus, input select, input input:focus {
+  color: #ffff;
 }
 
 .input_text {
@@ -99,4 +104,38 @@ input.message {
   line-height: normal;
   margin-bottom: 10px;
   text-transform: capitalize;
+}
+
+::placeholder {
+  color: rgba(255, 255, 255, 0.25);
+  opacity: 1;
+  /* Firefox */
+}
+
+::-ms-input-placeholder {
+  /* Edge 12 -18 */
+  color: #FF7F57;
+}
+
+textarea {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  outline: none;
+  border: none;
+  resize: none;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+  width: 371px;
+  height: 80px;
+}
+textarea:hover {
+  border-bottom: 1px solid #FF7F57;
+}
+textarea:hover::placeholder {
+  color: #ffff;
+}
+textarea:focus, textarea input:focus {
+  color: #ffff;
 }
