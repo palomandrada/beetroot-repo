@@ -101,8 +101,9 @@ input {
             
         }
 
-        &:focus, select, input:focus, :active {
+        &:focus, select, input:focus {
             color: $light;
+            border-bottom: 1px solid $accent;
         }
   }
   
@@ -139,7 +140,7 @@ input {
     height: 80px;
 
         &:hover {
-            border-bottom: 1px solid $accent;
+            border-bottom: 1px solid $light;
         }
 
         &:hover::placeholder {
@@ -148,5 +149,6 @@ input {
 
         &:focus, input:focus {
             color: $light;
+            border-bottom: 1px solid $accent;
         }
   }

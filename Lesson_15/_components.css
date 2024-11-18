@@ -93,8 +93,9 @@ input:hover {
 input:focus {
   border-bottom: 1x solid #FF7F57;
 }
-input:focus, input select, input input:focus, input :active {
+input:focus, input select, input input:focus {
   color: #ffff;
+  border-bottom: 1px solid #FF7F57;
 }
 
 .input_text {
@@ -132,11 +133,12 @@ textarea {
   height: 80px;
 }
 textarea:hover {
-  border-bottom: 1px solid #FF7F57;
+  border-bottom: 1px solid #ffff;
 }
 textarea:hover::placeholder {
   color: #ffff;
 }
 textarea:focus, textarea input:focus {
   color: #ffff;
+  border-bottom: 1px solid #FF7F57;
 }
