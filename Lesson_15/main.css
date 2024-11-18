@@ -173,6 +173,7 @@ input {
   height: 28px;
   flex-shrink: 0;
   margin-bottom: 40px;
+  color: #ffff;
 }
 input:hover {
   border-bottom: 1px solid #ffff;
@@ -180,7 +181,7 @@ input:hover {
 input:focus {
   border-bottom: 1x solid #FF7F57;
 }
-input:focus, input select, input input:focus {
+input:focus, input select, input input:focus, input :active {
   color: #ffff;
 }
 

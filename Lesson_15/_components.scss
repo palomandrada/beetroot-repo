@@ -89,6 +89,7 @@ input {
     height: 28px;
     flex-shrink: 0;
     margin-bottom: 40px;
+    color: $light    ;
 
         &:hover {
             border-bottom: 1px solid $light;
@@ -100,7 +101,7 @@ input {
             
         }
 
-        &:focus, select, input:focus {
+        &:focus, select, input:focus, :active {
             color: $light;
         }
   }
