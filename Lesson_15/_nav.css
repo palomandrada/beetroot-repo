@@ -34,6 +34,8 @@ header {
 
 .nav_item {
   font-size: 14px;
+  font-weight: 600;
+  text-transform: capitalize;
   color: #13253A;
 }
 .nav_item:hover {

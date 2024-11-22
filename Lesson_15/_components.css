@@ -15,6 +15,7 @@
   line-height: normal;
   cursor: pointer;
   transition: all 0.3s ease;
+  border-radius: 3px;
 }
 .btn:hover {
   background-color: #b14d2e;
@@ -49,11 +50,12 @@
   font-weight: 400;
   line-height: 27px;
   padding-bottom: 20px;
+  color: #13253A;
 }
 
 .subtitle {
   font-size: 16px;
-  color: #3B4D6C;
+  color: #2557AB;
   padding-bottom: 5px;
   text-transform: capitalize;
   font-style: normal;

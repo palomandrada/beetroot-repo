@@ -35,6 +35,8 @@ header {
 
   .nav_item {
     font-size: 14px;
+    font-weight: 600;
+    text-transform: capitalize;
     color: $default_text;
       &:hover {
         color: $accent; 

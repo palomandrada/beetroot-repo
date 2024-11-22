@@ -80,6 +80,8 @@ header {
 
 .nav_item {
   font-size: 14px;
+  font-weight: 600;
+  text-transform: capitalize;
   color: #13253A;
 }
 .nav_item:hover {
@@ -103,6 +105,7 @@ header {
   line-height: normal;
   cursor: pointer;
   transition: all 0.3s ease;
+  border-radius: 3px;
 }
 .btn:hover {
   background-color: #b14d2e;
@@ -137,11 +140,12 @@ header {
   font-weight: 400;
   line-height: 27px;
   padding-bottom: 20px;
+  color: #13253A;
 }
 
 .subtitle {
   font-size: 16px;
-  color: #3B4D6C;
+  color: #2557AB;
   padding-bottom: 5px;
   text-transform: capitalize;
   font-style: normal;
@@ -286,6 +290,7 @@ textarea:focus, textarea input:focus {
 .banner .title {
   font-size: 20px;
   padding-bottom: 5px;
+  color: #3B4D6C;
 }
 
 .banner_icon {
@@ -427,6 +432,11 @@ textarea:focus, textarea input:focus {
   letter-spacing: -0.5px;
   text-transform: capitalize;
   padding-bottom: 30px;
+}
+
+.form_list button {
+  width: 370px;
+  margin-top: 36px;
 }
 
 footer {

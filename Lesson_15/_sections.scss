@@ -54,6 +54,7 @@
 .banner .title {
     font-size: 20px;
     padding-bottom: 5px;
+    color: $secondary_text;
 }
 
 .banner_icon {
@@ -192,6 +193,11 @@
     letter-spacing: -0.5px;
     text-transform: capitalize;
     padding-bottom: 30px;
+}
+
+.form_list button {
+    width: 370px;
+    margin-top: 36px;
 }
 
 footer {

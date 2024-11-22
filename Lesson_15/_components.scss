@@ -16,6 +16,8 @@
     line-height: normal;
     cursor: pointer;
     transition: all 0.3s ease;
+    border-radius: 3px;
+
 
         &:hover {
             background-color: $accent_hover;
@@ -52,11 +54,12 @@
     font-weight: 400;
     line-height: 27px;
     padding-bottom: 20px;
+    color: $default-text;
 }
 
 .subtitle {
     font-size: 16px;
-    color: $secondary_text;
+    color: $brand;
     padding-bottom: 5px;
     text-transform: capitalize;
     font-style: normal;
