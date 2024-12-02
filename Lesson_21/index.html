@@ -14,36 +14,112 @@
 </head>
 <body>
   <div class="page_wrapper">
-<!-- Header Section with Background Image -->
-    <section class="hero">
-        <div class="hero_container">
-            <div class="hero_title">
-                <h1 class="hero_title">Bhromaon</h1>
-                <p class="hero_description">Safe Travel Anywhere</p>
-                <div class="search_bar">
-                    <input type="text" placeholder="Search Your Travel Destination">
-                    <button class="search btn">Search</button>
-                    <img class="input_search_icon" src="./icons/search.svg" alt="">
-                </div>
-            </div>
-            <div class="scroll">
-              <button class="scroll_btn">
-                  <a href="#" class="scroller">Scroll down</a>
-              </button>
-              <i class="fa-solid fa-chevron-down"></i>
+<!-- HERO SECTION (title + background image)-->
+<section class="hero">
+  <div class="hero_container">
+      <h1 class="hero_title">Bhromaon</h1>
+      <p class="hero_subtitle">Safe travel anywhere</p>
+      <div class="search">
+          <input type="text" id="destination" name="destination" placeholder="Search your travel destination" />
+          <label for="destination" class="search_label"></label>
+          <button class="search_btn">
+              Search
+              <img
+                  class="btn_icon"
+                  src="./icons/search-icon-1.svg"
+                  alt=""
+              />
+          </button>
+      </div>
 
-            </div>
-        </div>
+      <div class="scroll">
+          <button class="scroll_btn">
+              <a href="#section1" class="scroller">Scroll down</a>
+          </button>
+          <i class="fa-solid fa-chevron-down"></i>
+      </div>
+  </div>
+</section>
+<!-- NAVIAGATION -->
+    <header>
+      <nav class="container navigation">
+        <ul class="nav_list">
+          <li class="nav_item"><a href="#">Who are we</a></li>
+          <li class="nav_item"><a href="#">What we do</a></li>
+          <li class="nav_item"><a href="#">Travel with us</a></li>
+          <li class="nav_item"><a href="#">Contact us</a></li>
+        </ul>
+      </nav>
+    </header>
+
+<!-- SECTION 1 -->
+    <section class="section1">
+      <div class="section1_container">
+          <div class="section1_text">
+              <h2 class="section1_title">
+                  Why choose us
+              </h2>
+              <p class="section1_description">
+                  Tion and dislike men who are so beguiled and demoralized by desire by the charms of pleasure of the moment, so blinded by desire, that the cannot foresee. Ddislike men who are so beguiled and demoralized by the charms of pleasure of the moment, so blinded by desire, that.
+              </p>
+              <button class="section1_btn">
+                  Explore places
+              </button>
+          </div>
+
+          <div class="section1_img">
+              <div class="image_top">
+                  <img src="./img/section_1.png" alt="" />
+              </div>
+              <div class="image_bottom">
+                  <img src="./img/section_1.2.jpg" alt="" />
+              </div>
+          </div>
+      </div>
     </section>
-<!-- Navigation Bar -->
-    <nav class="container navigation">
-      <ul class="nav_list">
-        <li class="nav_item"><a href="#">Who are we</a></li>
-        <li class="nav_item"><a href="#">What we do</a></li>
-        <li class="nav_item"><a href="#">Travel with us</a></li>
-        <li class="nav_item"><a href="#">Contact us</a></li>
-      </ul>
-    </nav>
+
+    <!-- BANNER -->
+    <section class="banner">
+      <div class="banner_container">
+          <div class="icon_group">
+              <div class="icon_container">
+                  <img
+                      src="img/lupe.svg"
+                      alt=""
+                      class="icon"
+                  />
+              </div>
+              <p class="icon_label">
+                  Search places
+              </p>
+          </div>
+          <div class="icon_group">
+              <div class="icon_container">
+                  <img
+                      src="img/check.svg"
+                      alt=""
+                      class="icon"
+                  />
+              </div>
+              <p class="icon_label">
+                  Select places
+              </p>
+          </div>
+          <div class="icon_group">
+              <div class="icon_container">
+                  <img
+                      src="img/thumbs_up.svg"
+                      alt=""
+                      class="icon"
+                  />
+              </div>
+              <p class="icon_label">
+                  Book & enjoy
+              </p>
+          </div>
+      </div>
+  </section>
+
   </div>
 </body>
 </html>
