@@ -20,7 +20,6 @@ ul {
     display: inline-block;
     vertical-align: middle;
   }
-
   
 button {
     background: none;
@@ -40,10 +39,10 @@ button {
     cursor: pointer;
 }
 
-.col {
-    display: inline-block;
-    vertical-align: top;
-}
+// .col {
+//     display: inline-block;
+//     vertical-align: top;
+// }
 
 .icon {
     font-size: 16px;
@@ -75,6 +74,10 @@ button {
     align-items: flex-start;
     justify-content: flex-end;
     gap: 10px;
+    @media screen and (max-width: 480px) {
+      align-items: center;
+
+    }
   }
   
   .email_sign {

@@ -35,11 +35,16 @@
               <a class="nav_item" href="#">Resources</a>
             </li>
           </ul>
+          <div class="nav actions">
+            <button class="btn">Sign In</button>
+            <button class="btn accent">Sign Up</button>
+          </div>
         </nav>
-        <div class="nav actions">
-          <button class="btn">Sign In</button>
-          <button class="btn accent">Sign Up</button>
-        </div>
+        <button class="dot_menu">
+          <div class="dot"></div>
+              <div class="dot"></div>
+              <div class="dot"></div>
+      </button>
       </div>
     </header>
     <main>
@@ -61,44 +66,46 @@
             </div>
           </div>
           <div class="col">
-            <img src="img/img_header.svg" alt="Productly" class="image" />
+            <img class="hero_image" src="img/img_header.svg" alt="Productly" class="image" />
           </div>
         </section>
         <section class="banner container">
           <h2 class="banner_title">
             We design tools to unveil your superpowers
           </h2>
-          <div class="col card">
-            <i class="icon fa-solid fa-arrow-pointer"></i>
-            <div class="description">
-              <h3 class="desc_title">First click tests</h3>
-              <p class="desc">While most people enjoy casino gambling.</p>
-            </div>
-          </div>
-          <div class="col card">
-            <i class="icon fa-brands fa-stumbleupon"></i>
-            <div class="description">
-              <h3 class="desc_title">Design surveys</h3>
-              <p class="desc">
-                Sports betting, lottery and bingo playing for the fun.
-              </p>
-            </div>
-          </div>
-          <div class="col card">
-              <i class="icon fa-solid fa-heart"></i>
-            <div class="description">
-              <h3 class="desc_title">Preference tests</h3>
-              <p class="desc">The Myspace page defines the individual.</p>
-            </div>
-          </div>
-          <div class="col card">
-            <i class="icon fa-solid fa-hourglass-half"></i>
-            <div class="description">
-              <h3 class="desc_title">Five second tests</h3>
-              <p class="desc">
-                Personal choices and the overall personality of the person.
-              </p>
-            </div>
+          <div class="banner_cards_container">
+              <div class="col card">
+                <i class="icon fa-solid fa-arrow-pointer"></i>
+                <div class="description">
+                  <h3 class="desc_title">First click tests</h3>
+                  <p class="desc">While most people enjoy casino gambling.</p>
+                </div>
+              </div>
+              <div class="col card">
+                <i class="icon fa-brands fa-stumbleupon"></i>
+                <div class="description">
+                  <h3 class="desc_title">Design surveys</h3>
+                  <p class="desc">
+                    Sports betting, lottery and bingo playing for the fun.
+                  </p>
+                </div>
+              </div>
+              <div class="col card">
+                  <i class="icon fa-solid fa-heart"></i>
+                <div class="description">
+                  <h3 class="desc_title">Preference tests</h3>
+                  <p class="desc">The Myspace page defines the individual.</p>
+                </div>
+              </div>
+              <div class="col card">
+                <i class="icon fa-solid fa-hourglass-half"></i>
+                <div class="description">
+                  <h3 class="desc_title">Five second tests</h3>
+                  <p class="desc">
+                    Personal choices and the overall personality of the person.
+                  </p>
+                </div>
+              </div>
           </div>
           <div class="banner_actions">
             <button class="btn accent">Get Started</button>
@@ -139,7 +146,7 @@
               </div>
             </div>
             <div class="col">
-              <img
+              <img class="professionals_image"
                 src="img/img_designers.svg"
                 alt="Designer illustration"
                 class="image"
@@ -147,13 +154,6 @@
             </div>
           </section>
           <section class="professionals">
-            <div class="col">
-              <img
-                src="img/img_managers.svg"
-                alt="Managers illustration"
-                class="image managers"
-              />
-            </div>
             <div class="col">
               <p class="desc">Easier decision making for</p>
               <h2 class="section_title">Product Managers</h2>
@@ -183,6 +183,13 @@
                   </div>
                 </div>
               </div>
+            </div>
+            <div class="col">
+              <img class="professionals_image"
+                src="img/img_managers.svg"
+                alt="Managers illustration"
+                class="image managers"
+              />
             </div>
           </section>
           <section class="professionals">
@@ -219,7 +226,7 @@
               </div>
             </div>
             <div class="col">
-              <img
+              <img class="professionals_image"
                 src="img/img_marketers.svg"
                 alt="Designer illustration"
                 class="image"
@@ -271,5 +278,12 @@
         </div>
       </div>
     </footer>
+
+    <script>
+      document.querySelector('.dot_menu').addEventListener('click', () => {
+          document.querySelector('.nav').classList.toggle('open');
+          document.querySelector('.dot_menu').classList.toggle('is-active');
+      })
+  </script>
   </body>
 </html>
