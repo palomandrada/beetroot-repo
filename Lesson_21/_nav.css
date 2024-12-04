@@ -249,9 +249,12 @@
   line-height: 26px;
 }
 .footer_icons i:hover {
-  color: #FF6363;
+  color: #5474FD;
 }
 
 .footer_icons .brand_color {
   color: #5474FD;
+}
+.footer_icons .brand_color:hover {
+  color: #FF6363;
 }

@@ -256,11 +256,16 @@
     font-size: 18px;
     line-height: 26px;
         &:hover{
-            color: $accent;
+            color: $brand;
         }
 
 }
 
 .footer_icons .brand_color{
     color: $brand;
+
+    &:hover{
+        color: $accent;
+    }
+
 }
