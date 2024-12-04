@@ -49,6 +49,7 @@
     line-height: 26px;
     letter-spacing: 2.4px;
     text-transform: uppercase;
+    color: $light;
 
     @media screen and (max-width: 393px) {
         margin-bottom: 42px;
@@ -94,7 +95,8 @@
     font-family: "Aleo", sans-serif;
     font-size: 14px;
     line-height: 26px;
-    text-transform: uppercase;              
+    text-transform: uppercase; 
+    color: $light;             
         a:hover {
             text-decoration: underline;
             text-underline-offset: 0.75rem;

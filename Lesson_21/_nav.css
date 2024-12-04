@@ -50,6 +50,7 @@
   line-height: 26px;
   letter-spacing: 2.4px;
   text-transform: uppercase;
+  color: #ffff;
 }
 @media screen and (max-width: 393px) {
   .logo {
@@ -96,6 +97,7 @@
   font-size: 14px;
   line-height: 26px;
   text-transform: uppercase;
+  color: #ffff;
 }
 .nav_item a:hover {
   text-decoration: underline;
