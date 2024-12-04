@@ -10,6 +10,7 @@ body, html {
 h1, h2, h3, p, i {
   margin: 0;
   padding: 0;
+  color: #E8E8E8;
 }
 
 ul {
@@ -19,7 +20,7 @@ ul {
 }
 
 a {
-  color: inherit;
+  color: #ffff;
   text-decoration: none;
   cursor: pointer;
 }

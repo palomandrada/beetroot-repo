@@ -12,6 +12,7 @@ body, html {
 h1, h2, h3, p, i {
     margin: 0;
     padding: 0;
+    color: $default_text;
 }
 
 ul {
@@ -21,7 +22,7 @@ ul {
 }
   
 a {
-    color: inherit;
+    color: $light;
     text-decoration: none;
     cursor: pointer;
 }

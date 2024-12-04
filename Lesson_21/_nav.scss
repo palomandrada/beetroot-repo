@@ -1,1 +1,264 @@
 @import "vars.scss";
+
+.header {
+    background-color: $brand;
+}
+
+
+.header_container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 32px 10px;
+
+    @media screen and (max-width: 1024px) {
+        max-width: 90%;
+    }
+
+    @media screen and (max-width: 768px) {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 22px 12px 10px;
+    }
+}
+
+.logo_container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+    @media screen and (max-width: 768px) {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+.logo_link {
+    height: 20px;
+}
+
+.logo {
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 26px;
+    letter-spacing: 2.4px;
+    text-transform: uppercase;
+
+    @media screen and (max-width: 393px) {
+        margin-bottom: 42px;
+    }
+}
+
+.logo a span {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.navigation_list {
+    display: flex;
+    gap: 35px;
+
+    @media screen and (max-width: 768px) {
+        display: none;
+
+        &.open {
+            visibility: visible;
+            opacity: 1;
+            padding-top: 22px;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 12px;
+        }
+    }
+
+    @media screen and (max-width: 393px) {
+        display: none;
+
+        &.open {
+            display: flex;
+        }
+    }
+}
+
+
+.nav_item {
+    font-family: "Aleo", sans-serif;
+    font-size: 14px;
+    line-height: 26px;
+    text-transform: uppercase;              
+        a:hover {
+            text-decoration: underline;
+            text-underline-offset: 0.75rem;
+            text-decoration-color: $accent;
+            color: $accent;
+            }
+
+        a:active {
+            color: $accent;
+        }
+
+    @media screen and (max-width: 768px) {
+        text-align: center;
+    }
+
+    @media screen and (max-width: 568px) {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        line-height: 42px;
+    }
+}
+
+.hamburger {
+    border: none;
+    position: relative;
+    cursor: pointer;
+    background-color: transparent;
+    color: $light;
+
+    &.open {
+        .divider {
+            background-color: $brand;
+            transition: all 0.3s ease;
+            z-index: 1;
+
+            &::before,
+            &::after {
+                top: 50%;
+                bottom: auto;
+            }
+
+            &::before {
+                transform: rotate(45deg);
+            }
+
+            &::after {
+                transform: rotate(-45deg);
+            }
+        }
+    }
+
+    @media screen and (min-width: 1024px) {
+        display: none;
+    }
+
+    @media screen and (max-width: 1024px) {
+        display: none;
+    }
+
+    @media screen and (max-width: 768px) {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .divider {
+        display: block;
+        width: 100%;
+        height: 2px;
+        background-color: $accent;
+
+        &::before,
+        &::after {
+            content: "";
+            width: 100%;
+            display: block;
+            height: 2px;
+            background-color: $accent;
+            position: absolute;
+        }
+
+        &::before {
+            top: 0;
+            left: 0;
+        }
+
+        &::after {
+            bottom: 0;
+            left: 0;
+        }
+    }
+}
+
+.hamburger.is-active .hamburger-inner, .hamburger.is-active .hamburger-inner::before, .hamburger.is-active .hamburger-inner::after {
+    background-color: $light;
+}
+
+.hamburger-inner, .hamburger-inner::before, .hamburger-inner::after {
+    background-color: $light;
+}
+
+
+
+// FOOTER ---------------------------------------------------------
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    background-color: $background;
+    padding: 122px 0 46px 0;
+}
+
+.footer_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+
+    @media screen and (max-width: 1024px) {
+        max-width: 90%;
+    }
+}
+
+.footer_title {
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 26px; /* 108.333% */
+    letter-spacing: 3.36px;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+}
+
+.footer_desc {
+    text-align: center;
+    font-size: 16px;
+    font-style: normal;
+   font-weight: 400;
+    line-height: 26px; /* 162.5% */
+    letter-spacing: 1.6px;
+    text-transform: capitalize;
+    margin-bottom: 29px;
+}
+
+.footer_icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 22px;
+}
+
+.footer_icons i {
+    color: $light;
+    font-size: 18px;
+    line-height: 26px;
+        &:hover{
+            color: $accent;
+        }
+
+}
+
+.footer_icons .brand_color{
+    color: $brand;
+}

@@ -1,125 +1,215 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="./fontawesome/css/all.min.css">
+    <link href="dist/hamburgers.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./fontawesome/css/all.min.css" />
     <link rel="stylesheet" href="main.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Aleo:ital,wght@0,100..900;1,100..900&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-
-</head>
-<body>
-  <div class="page_wrapper">
-<!-- HERO SECTION (title + background image)-->
-<section class="hero">
-  <div class="hero_container">
-      <h1 class="hero_title">Bhromaon</h1>
-      <p class="hero_subtitle">Safe travel anywhere</p>
-      <div class="search">
-          <input type="text" id="destination" name="destination" placeholder="Search your travel destination" />
-          <label for="destination" class="search_label"></label>
-          <button class="search_btn">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Aleo:ital,wght@0,100..900;1,100..900&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="page_wrapper">
+      <!-- HERO SECTION (title + background image)-------------->
+      <section class="hero">
+        <div class="hero_container">
+          <h1 class="hero_title">Bhromaon</h1>
+          <p class="hero_subtitle">Safe travel anywhere</p>
+          <div class="search">
+            <input
+              type="text"
+              id="destination"
+              name="destination"
+              placeholder="Search your travel destination"
+            />
+            <label for="destination" class="search_label"></label>
+            <button class="search_btn">
               Search
-              <img
-                  class="btn_icon"
-                  src="./icons/search-icon-1.svg"
-                  alt=""
-              />
-          </button>
-      </div>
+              <img class="btn_icon" src="icons/search.svg" alt="" />
+            </button>
+          </div>
 
-      <div class="scroll">
-          <button class="scroll_btn">
-              <a href="#section1" class="scroller">Scroll down</a>
-          </button>
-          <i class="fa-solid fa-chevron-down"></i>
-      </div>
-  </div>
-</section>
-<!-- NAVIAGATION -->
-    <header>
-      <nav class="container navigation">
-        <ul class="nav_list">
-          <li class="nav_item"><a href="#">Who are we</a></li>
-          <li class="nav_item"><a href="#">What we do</a></li>
-          <li class="nav_item"><a href="#">Travel with us</a></li>
-          <li class="nav_item"><a href="#">Contact us</a></li>
-        </ul>
-      </nav>
-    </header>
+          <div class="scroll">
+            <a href="#choose_us" class="scroll_btn">Scroll down</a>
+            <i class="fa-solid fa-chevron-down chevron"></i>
+          </div>
+        </div>
+      </section>
 
-<!-- SECTION 1 -->
-    <section class="section1">
-      <div class="section1_container">
+      <!-- NAVIGATION -------------------------------------->
+      <header class="header">
+        <div class="header_container">
+          <div class="logo_container">
+            <div class="logo_link">
+              <a href="#" class="logo"><span>Bhromaon</span></a>
+            </div>
+          </div>
+          <button class="hamburger" type="button">
+            <span class="hamburger-box">
+              <span class="hamburger-inner"></span>
+            </span>
+          </button>
+
+          <nav class="navigation_container">
+            <ul class="navigation_list">
+              <li><a href="#" class="nav_item">Who we are</a></li>
+              <li><a href="#" class="nav_item">What we do</a></li>
+              <li><a href="#" class="nav_item">Travel with us</a></li>
+              <li><a href="#" class="nav_item">Contact us</a></li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+
+      <!-- SECTION 1 --------------------------------------->
+      <section class="section1" id="choose_us">
+        <div class="section1_container">
           <div class="section1_text">
-              <h2 class="section1_title">
-                  Why choose us
-              </h2>
-              <p class="section1_description">
-                  Tion and dislike men who are so beguiled and demoralized by desire by the charms of pleasure of the moment, so blinded by desire, that the cannot foresee. Ddislike men who are so beguiled and demoralized by the charms of pleasure of the moment, so blinded by desire, that.
-              </p>
-              <button class="section1_btn">
-                  Explore places
-              </button>
+            <h2 class="section1_title">Why choose us</h2>
+            <p class="section1_description">
+              Tion and dislike men who are so beguiled and demoralized by desire
+              by the charms of pleasure of the moment, so blinded by desire,
+              that the cannot foresee. Ddislike men who are so beguiled and
+              demoralized by the charms of pleasure of the moment, so blinded by
+              desire, that.
+            </p>
+            <button class="section1_btn">Explore places</button>
           </div>
 
           <div class="section1_img">
-              <div class="image_top">
-                  <img src="./img/section_1.png" alt="" />
-              </div>
-              <div class="image_bottom">
-                  <img src="./img/section_1.2.jpg" alt="" />
-              </div>
+            <div class="image_top">
+              <img class="image1" src="./img/section_1.png" alt="" />
+            </div>
+            <div class="image_bottom">
+              <img class="image2" src="./img/section_1.2.jpg" alt="" />
+            </div>
           </div>
-      </div>
-    </section>
+        </div>
+      </section>
 
-    <!-- BANNER -->
-    <section class="banner">
-      <div class="banner_container">
+      <!-- BANNER -------------------------------------->
+      <section class="banner">
+        <div class="banner_container">
           <div class="icon_group">
-              <div class="icon_container">
-                  <img
-                      src="img/lupe.svg"
-                      alt=""
-                      class="icon"
-                  />
-              </div>
-              <p class="icon_label">
-                  Search places
-              </p>
+            <div class="icon_container">
+              <img class="icon" src="img/lupe.svg" alt="" />
+            </div>
+            <p class="icon_label">Search places</p>
           </div>
           <div class="icon_group">
-              <div class="icon_container">
-                  <img
-                      src="img/check.svg"
-                      alt=""
-                      class="icon"
-                  />
-              </div>
-              <p class="icon_label">
-                  Select places
-              </p>
+            <div class="icon_container">
+              <img class="icon" src="img/check.svg" alt="" />
+            </div>
+            <p class="icon_label">Select places</p>
           </div>
           <div class="icon_group">
-              <div class="icon_container">
-                  <img
-                      src="img/thumbs_up.svg"
-                      alt=""
-                      class="icon"
-                  />
-              </div>
-              <p class="icon_label">
-                  Book & enjoy
-              </p>
+            <div class="icon_container">
+              <img class="icon" src="img/thumbs_up.svg" alt="" />
+            </div>
+            <p class="icon_label">Book & enjoy</p>
           </div>
-      </div>
-  </section>
+        </div>
+      </section>
 
-  </div>
-</body>
+      <!--PROPERTIES-------------------------------------->
+      <section class="properties">
+        <div class="property_1">
+          <div class="property_1_container">
+            <div class="property_text_1">
+              <p class="pro_subtitle">Spain</p>
+              <p class="pro_title">Grand Spain Madrid</p>
+              <p class="pro_desc">
+                But I must explain to you how all this mistaken idea of account
+                to denouncing pleasure and praising pain was account born and I
+                account will give you a complete account of the system.
+              </p>
+              <button class="pro_btn">Book now</button>
+            </div>
+          </div>
+        </div>
+        <div class="property_2">
+          <div class="property_2_container">
+            <div class="property_text_2">
+              <p class="pro_subtitle">Spain</p>
+              <p class="pro_title">Grand Spain Madrid</p>
+              <p class="pro_desc">
+                But I must explain to you how all this mistaken idea of account
+                to denouncing pleasure and praising pain was account born and I
+                account will give you a complete account of the system.
+              </p>
+              <button class="pro_btn">Book now</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--REVIEWS ------------------------------------->
+      <section class="reviews">
+        <div class="reviews_container">
+          <h2 class="reviews_title">What our tourist say</h2>
+          <div class="review">
+            <div class="review_img">
+              <img class="user" src="img/user.jpg" alt="" />
+            </div>
+            <div class="review_text_box">
+              <p class="user_name">Sam Sumon</p>
+              <p class="review_desc">
+                <i class="fa-solid fa-quote-left"></i>
+                But I must explain to you how all this mistaken idea of account
+                to denouncinpleasure and praising pain But I must explain to you
+                how all this mistaken idea of account to nai denouncing pleasure
+                and praising pain was account born and I account will give you a
+                complete account of the system was account born and I account
+                will give you a nai the complete account of the system.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- FOOTER -------------------------------------->
+      <footer class="footer">
+        <div class="footer_container">
+          <h2 class="footer_title">Bhromaon</h2>
+          <p class="footer_desc">Safe travel anywhere</p>
+          <div class="footer_icons">
+            <a href="#">
+              <i class="fa-brands fa-facebook-f"></i>
+            </a>
+            <a href="#">
+              <i class="fa-brands fa-twitter"></i>
+            </a>
+            <a href="#">
+              <i class="fa-brands fa-linkedin-in brand_color"></i>
+            </a>
+            <a href="#">
+              <i class="fa-brands fa-youtube"></i>
+            </a>
+            <a href="#">
+              <i class="fa-brands fa-pinterest"></i>
+            </a>
+          </div>
+        </div>
+      </footer>
+
+      <!-- SCRIPT -------------------------------------->
+
+      <script>
+        document.querySelector(".hamburger").addEventListener("click", () => {
+          document.querySelector(".navigation_list").classList.toggle("open");
+          document.querySelector(".hamburger").classList.toggle("is-active");
+        });
+      </script>
+    </div>
+  </body>
 </html>
