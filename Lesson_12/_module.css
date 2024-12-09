@@ -47,6 +47,13 @@
     line-height: 44px;
   }
 }
+@media screen and (max-width: 430px) {
+  .main_title {
+    text-align: center;
+    font-size: 32px;
+    line-height: 36px;
+  }
+}
 
 @media screen and (max-width: 968px) {
   .hero_image {
@@ -88,6 +95,14 @@
   font-size: 16px;
 }
 
+@media screen and (max-width: 968px) {
+  .col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
 /* BANNER SUPERPOWERS-------------------------------------------------------*/
 .banner, .professionals {
   padding-top: 120px;
@@ -97,12 +112,28 @@
 .banner_cards_container {
   display: flex;
   gap: 50px;
-  align-items: start;
-  justify-content: center;
+  justify-content: space-between;
 }
 @media screen and (max-width: 968px) {
   .banner_cards_container {
     flex-wrap: wrap;
+    gap: 80px;
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .card {
+    flex-wrap: wrap;
+    min-width: 250px;
+  }
+}
+@media screen and (max-width: 968px) {
+  .card {
+    align-items: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
   }
 }
 
@@ -131,17 +162,6 @@
 
 .icon.fa-hourglass-half {
   background-color: #4DADF7;
-}
-
-.col.card {
-  max-width: 270px;
-  width: 25%;
-}
-@media screen and (max-width: 968px) {
-  .col.card {
-    width: 45%;
-    text-align: center;
-  }
 }
 
 .description {

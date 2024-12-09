@@ -18,7 +18,7 @@ ul {
   padding: 0;
 }
 
-.navigation, .actions, .logo_link {
+.actions, .logo_link {
   display: inline-block;
   vertical-align: middle;
 }

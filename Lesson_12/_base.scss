@@ -42,49 +42,72 @@ body {
 
     /* NAVIGATION -------------------------------------------------------*/
 
+.header .container{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
 .navigation {
   margin: 0px;
   padding-right: 60px;
   display: flex;
-}
-
-.nav .btn {
-  margin-right: 12px;
-}
-
-.nav_list {
-  margin: 0px;
-  padding: 0px;
-}
-
-.nav_list li {
-  display: inline-block;
-  vertical-align: middle;
-  margin-right: 35px;
-}
-
-.navigation {
-  width: 60%;
-  text-align: right;
+  align-items: center;
 
   @media screen and (max-width:1280px) {
     display: none;
 
     position: fixed; 
+    display: flex;
+    flex-direction: column;
     right: 0; 
     bottom: 0; 
     top:0; 
-    width: 25%;
+    width: 50%;
     background: #ffffff;
     border-left: 1px solid rgba(0, 0, 0, 0.2);
     padding-top: 100px;
+    padding-left: 30px;
+    align-items: flex-start;
 
     &.open {
         display: block;
         z-index: 0;
     }
 
+  }
 }
+
+.btn {
+  margin-right: 12px;
+}
+
+.nav_list {
+  margin: 0px;
+  padding: 0px;
+
+  @media screen and (max-width:1280px) {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.nav_list li {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 35px;
+    @media  screen and  (max-width:1280px) {
+      flex-direction: column;
+    
+    }
+
+    a {
+      text-transform: capitalize; 
+
+    @media  screen and  (max-width:1280px) {
+        padding: 10px 0;
+      }
+    }
 }
 
 .dot_menu {
@@ -100,11 +123,14 @@ body {
   gap: 4px;
   z-index: 2;
 
+    &:hover{
+    background-color:rgb(233, 233, 233);
+    border-radius: 30px;
+    }
 
-      @media screen and (min-width:1280px) {
-          display: none;
-          
-      }
+    @media screen and (min-width:1280px) {
+    display: none;
+    }
 }
 
 .dot {
@@ -113,3 +139,4 @@ body {
   background-color: rgb(22, 22, 22);
   border-radius: 6px;
 }
+
