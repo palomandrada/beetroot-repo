@@ -59,8 +59,6 @@ a {
   .navigation {
     display: none;
     position: fixed;
-    display: flex;
-    flex-direction: column;
     right: 0;
     bottom: 0;
     top: 0;
