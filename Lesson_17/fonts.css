@@ -1,0 +1,4 @@
+@font-face {
+  font-family: "SourceSansPro";
+  src: local("SourceSansPro"), url("SourceSansProRegular.otf") format("opentype"), url("SourceSansProRegular.woff") format("woff"), url("SourceSansProRegular.woff2") format("woff2");
+}

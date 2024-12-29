@@ -3,14 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Calculator</title>
+    <link rel="stylesheet" href="main.css">
 </head>
 <body>
-    <p>Calculator</p> 
- 
-    <script src="script.js">//alert ('Hello from html')</script> 
+    <div id="calculator">
+        <input id="display" readonly>
+        <div id = "keys">
+            <button onclick="show('+')" class="operator">+</button>
+            <button onclick="show('7')">7</button>
+            <button onclick="show('8')">8</button>
+            <button onclick="show('9')">9</button>
+            <button onclick="show('-')" class="operator">-</button>
+            <button onclick="show('4')">4</button>
+            <button onclick="show('5')">5</button>
+            <button onclick="show('6')">6</button>
+            <button onclick="show('*')" class="operator">*</button>
+            <button onclick="show('1')">1</button>
+            <button onclick="show('2')">2</button>
+            <button onclick="show('3')">3</button>
+            <button onclick="show('/')" class="operator">/</button>
+            <button onclick="show('0')">0</button>
+            <button onclick="show('.')">.</button>
+            <button onclick="calculate()">=</button>
+            <button onclick="clear()" class="operator">C</button>
+        </div>
+    </div>
+    <script src="main.js"></script> 
     <!-- It's important to add the script last to avoid loading problems.  -->
-
 </body>
 </html>
 
