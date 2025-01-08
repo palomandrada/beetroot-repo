@@ -104,11 +104,3 @@ const shoppingReceipt = [
     }
 ]
 
-function Receipt() {
-    console.log("Receipt:");
-    shoppingReceipt.forEach(item => {
-      console.log(`- ${item.productName}, ${item.pricePerItem}€ x ${item.amount} (Total: ${item.pricePerItem * item.amount}€)`);
-    });
-  }
-
-Receipt() 

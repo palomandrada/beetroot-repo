@@ -88,12 +88,3 @@ var shoppingReceipt = [{
   pricePerItem: 2.5,
   amount: 1
 }];
-
-function Receipt() {
-  console.log("Receipt:");
-  shoppingReceipt.forEach(function (item) {
-    console.log("- ".concat(item.productName, ", ").concat(item.pricePerItem, "\u20AC x ").concat(item.amount, " (Total: ").concat(item.pricePerItem * item.amount, "\u20AC)"));
-  });
-}
-
-Receipt();
