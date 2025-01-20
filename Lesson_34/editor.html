@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Editor</title>
+    <link rel="stylesheet" href="editor.css">
+    <link rel="stylesheet" href="./fontawesome/css/all.min.css">
+</head>
+<body>
+    <div class="container-editor">
+        <div class="toolbar">
+            <ul class="tool-list">
+                <li class="tool">
+                    <button class="tool-btn" type="button" data-command="justifyLeft">
+                        <i class="fa-solid fa-align-left"></i>
+                    </button>
+                </li>
+                <li class="tool">
+                    <button class="tool-btn" type="button" data-command="justifyCenter">
+                        <i class="fa-solid fa-align-center"></i>
+                    </button>
+                </li>
+                <li class="tool">
+                    <button class="tool-btn" type="button" data-command="justifyLeft">
+                        <i class="fa-solid fa-align-left"></i>
+                    </button>
+                </li>
+                <li class="tool">
+                    <button class="tool-btn" type="button" data-command="bold">
+                        <i class="fa-solid fa-bold"></i>
+                    </button>
+                </li>
+                <li class="tool">
+                    <button class="tool-btn" type="button" data-command="italic">
+                        <i class="fa-solid fa-italic"></i>
+                    </button>
+                </li>
+                <li class="tool">
+                    <button class="tool-btn" type="button" data-command="underline">
+                        <i class="fa-solid fa-underline"></i>
+                    </button>
+                </li>
+                <li class="tool">
+                    <button class="tool-btn" type="button" data-command="insertOrderedList">
+                        <i class="fa-solid fa-list-ol"></i>
+                    </button>
+                </li>
+                <li class="tool">
+                    <button class="tool-btn" type="button" data-command="insertUnorderedList">
+                        <i class="fa-solid fa-list-ul"></i>
+                    </button>
+                </li>
+                <li class="tool">
+                    <button class="tool-btn" type="button" data-command="createLink">
+                        <i class="fa-solid fa-link"></i>
+                    </button>
+                </li>
+            </ul>
+        <div id="textDisplay">This is the default text. Click Ctrl+E to edit this text.</div>
+        <textarea id="textEdit"></textarea>
+    <script src="editor.js"></script> 
+</body>
+</html>
