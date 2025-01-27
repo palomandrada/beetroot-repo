@@ -1,0 +1,45 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  box-sizing: border-box;
+  font-family: "Montserrat", serif;
+}
+
+h1,
+h2,
+h3,
+p,
+i {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  color: #ffff;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  text-decoration: none;
+}
+
+.page_wrapper {
+  margin: 0 auto;
+  width: 100%;
+}
+
+.container {
+  margin: 0 auto;
+  width: 90;
+  max-width: 1170px;
+}
