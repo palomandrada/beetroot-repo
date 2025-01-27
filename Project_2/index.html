@@ -6,58 +6,213 @@
     <title>Project 2</title>
     <link rel="stylesheet" href="./fontawesome/css/all.min.css" />
     <link rel="stylesheet" href="main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <div class="page_wrapper">
-
       <!-- NAVIGATION --------------------- -->
-      <header class="header">
-        <div class="header_container">
-          <div class="logo_container">
-            <div class="logo_link">
-              <img src="img/Logo.png" alt="Monticello" />
+      <div class="background_1">
+        <header class="header">
+          <div class="nav_container">
+            <div class="logo_container">
+              <div class="logo_link">
+                <img src="img/Logo.png" alt="Monticello" />
+              </div>
+            </div>
+            <button class="hamburger" type="button">
+              <span class="hamburger-box">
+                <span class="hamburger-inner"></span>
+              </span>
+            </button>
+            <nav class="navigation_container">
+              <ul class="navigation_list">
+                <li><a href="#" class="nav_item">About us</a></li>
+                <li><a href="#" class="nav_item">Projects</a></li>
+                <li><a href="#" class="nav_item">News</a></li>
+                <li><a href="#" class="nav_item">Contact</a></li>
+              </ul>
+            </nav>
+            <div class="nav_icons">
+              <button class="social_icon">
+                <i class="fa-brands fa-facebook-f"></i>
+              </button>
+              <a class="social_icon" href="#">
+                <i class="fa-brands fa-twitter"></i>
+              </a>
+              <a class="social_icon" href="#">
+                <i class="fa-brands fa-instagram"></i>
+              </a>
             </div>
           </div>
-          <button class="hamburger" type="button">
-            <span class="hamburger-box">
-              <span class="hamburger-inner"></span>
-            </span>
-          </button>
-          <nav class="navigation_container">
-            <ul class="navigation_list">
-              <li><a href="#" class="nav_item">About us</a></li>
-              <li><a href="#" class="nav_item">Projects</a></li>
-              <li><a href="#" class="nav_item">News</a></li>
-              <li><a href="#" class="nav_item">Contact</a></li>
-            </ul>
-          </nav>
-          <div class="nav_icons">
-            <button class="social_icon">
-              <i class="fa-brands fa-facebook-f"></i>
-            </button>
-            <a class="social_icon" href="#">
-              <i class="fa-brands fa-twitter"></i>
-            </a>
-            <a class="social_icon" href="#">
-              <i class="fa-brands fa-instagram"></i>
-            </a>
-          </div>
-        </div>
-      </header>
+        </header>
 
-      <!-- HERO SECTION (title + background) ----------- -->
-       <section class="hero">
-        <div class="hero_container">
+        <!-- HERO SECTION (title + background) ----------- -->
+        <section class="hero header">
+          <div class="hero_container">
             <h1 class="hero_title">Simple & Modern</h1>
             <p class="hero_subtitle">We make the word beautiful everyday</p>
+          </div>
+          <div class="scroll">
+            <a href="#choose_us" class="scroll_btn">
+              <i class="fa-solid fa-chevron-down chevron"></i>
+            </a>
+          </div>
+        </section>
+      </div>
+      <!-- SECTION 1 --------------------------------------->
+      <div class="section">
+        <div class="section_title">
+          <div class="line"></div>
+          <h2>What we do</h2>
         </div>
-        <div class="scroll">
-            <a href="#search" class="scroll_btn">Scroll down</a>
-            <i class="fa-solid fa-chevron-down chevron"></i>
+        <div class="subsection">
+          <div class="subsection_container">
+            <div class="subsection_img">
+              <img
+                class="subsection_image"
+                src="img/location1.png"
+                alt="Trade Center"
+              />
+              <div class="rectangle1"></div>
+            </div>
+            <div class="subsection_text">
+              <div class="subsection_subtitle">One World</div>
+              <div class="subsection_title">Trade Center</div>
+              <div class="subsection_description">
+                Increasing prosperity in our lives can be accomplished by having
+                the right frame of mind. The truth is, our thoughts are very
+                powerful.
+              </div>
+              <button class="btn">More details</button>
+              <div class="location">
+                <i class="fa-solid fa-location-dot"></i>
+                <p>New York City, United States - 1776 feets</p>
+              </div>
+            </div>
+          </div>
+          <div class="subsection_container">
+            <div class="subsection_text">
+              <div class="subsection_subtitle">International</div>
+              <div class="subsection_title">Commerce Center</div>
+              <div class="subsection_description">
+                Successful businesses have many things in common, today we’ll
+                look at the big ‘R’ of recognition and how a digital advertising
+                network may help.
+              </div>
+              <button class="btn">More details</button>
+              <div class="location">
+                <i class="fa-solid fa-location-dot"></i>
+                <p>Hong Kong - 1588 feet</p>
+              </div>
+            </div>
+            <div class="subsection_img">
+              <img
+                class="subsection_image"
+                src="img/location2.png"
+                alt="Trade Center"
+              />
+              <div class="rectangle2"></div>
+            </div>
+          </div>
         </div>
-       </section>
-    <!-- SECTION 1 --------------------------------------->
-    
+      </div>
+      <!-- BANNER --------------------------------------->
+      <div class="background_2 banner">
+        <div class="section_title">
+          <div class="line"></div>
+          <h2>Latest news</h2>
+        </div>
+      </div>
+      <!-- GALLERY --------------------------------------->
+      <div class="gallery_container">
+        <div class="section_title">
+          <div class="line"></div>
+          <h2>Gallery</h2>
+        </div>
+        <div class="gallery_images">
+          <div class="main_image">
+            <img class="icon_360" src="img/gallery/360.png" alt="" />
+          </div>
+          <div class="secondary_images">
+            <div class="secondary_image">
+              <img src="img/gallery/Image-2.png" alt="" />
+              <img src="img/gallery/Image-4.png" alt="" />
+            </div>
+            <div class="secondary_image">
+              <img src="img/gallery/Image-3.png" alt="" />
+              <img src="img/gallery/Image-5.png" alt="" />
+            </div>
+          </div>
+        </div>
+        <button class="btn">See more</button>
+      </div>
+      <!-- MAP --------------------------------------->
+      <div class="map_container">
+        <div class="map"></div>
+      </div>
+      <!-- FORM --------------------------------------->
+      <div class="form_container">
+        <div class="form_text_container">
+          <div class="section_title">
+            <div class="line"></div>
+            <h2>Get in touch</h2>
+          </div>
+          <div class="info_form_container">
+            <div class="info">
+              <div class="info_group">
+                <i class="fa-solid fa-location-dot"></i>
+                <p>91 nola extensions suite 670</p>
+              </div>
+              <div class="info_group">
+                <i class="fa-solid fa-phone"></i>
+                <p>+001 356-868-2454</p>
+              </div>
+              <div class="info_group">
+                <i class="fa-solid fa-inbox"></i>
+                <p>montichello@service.com</p>
+              </div>
+              <div class="info_group">
+                <i class="fa-regular fa-clock"></i>
+                <p>From 07:05AM to 19:30PM</p>
+              </div>
+            </div>
+            <div class="form">
+              <input type="text" placeholder="Name" />
+              <input type="text" placeholder="Email" />
+              <button class="btn">submit</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- FOOTER --------------------------------------->
+      <footer class="footer">
+        <div class="footer_container">
+          <div class="footer_navigation">
+            <div class="logo_container">
+              <div class="logo_link">
+                <img src="img/Logo.png" alt="Monticello" />
+              </div>
+            </div>
+            <div class="nav_icons">
+              <button class="social_icon">
+                <i class="fa-brands fa-facebook-f"></i>
+              </button>
+              <a class="social_icon" href="#">
+                <i class="fa-brands fa-twitter"></i>
+              </a>
+              <a class="social_icon" href="#">
+                <i class="fa-brands fa-instagram"></i>
+              </a>
+            </div>
+          </div>
+          <p class="copywrite">Copyrights © 2020 Montichello</p>
+        </div>
+      </footer>
     </div>
   </body>
 </html>

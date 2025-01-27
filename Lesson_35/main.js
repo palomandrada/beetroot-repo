@@ -33,44 +33,44 @@ class WorldClock {
         this.container.appendChild(this.clockElement)
         this.render();
     }
-}
 
-getCurrentDate() {
-    const date = new Date().toLocaleDateString('en-US', {
-        timeZone: this.timezone
-    })
-    return `Current Date: ${date}`
-}
+    getCurrentDate() {
+        const date = new Date().toLocaleDateString('en-US', {
+            timeZone: this.timezone
+        })
+        return `Current Date: ${date}`
+    }
 
-getCurrentDateTime() {
-    const dateTime = new Date().toLocaleString('en-US', {
-        timeZone: this.timezone
-    })
-    return `Current Date and Time: ${dateTime}`
-}
+    getCurrentDateTime() {
+        const dateTime = new Date().toLocaleString('en-US', {
+            timeZone: this.timezone
+        })
+        return `Current Date and Time: ${dateTime}`
+    }
 
-deleteClock() {
-    this.container.removeChild(this.clockElement);
-}
+    deleteClock() {
+        this.container.removeChild(this.clockElement);
+    }
 
-render() {
+    render() {
         this.clockElement.innerHTML = `
-        <p>Timezone: ${this.timezone}</p>
-        <button class="show-time">Show Time</button>
-        <button class="show-datetime">Show Date & Time</button>
-        <button class="delete-clock">Delete Clock</button>
-        <div class="output"></div>
-    `;
+            <p>Timezone: ${this.timezone}</p>
+            <button class="show-time">Show Time</button>
+            <button class="show-datetime">Show Date & Time</button>
+            <button class="delete-clock">Delete Clock</button>
+            <div class="output"></div>
+        `;
 
-    this.clockElement.querySelector('.show-time').addEventListener('click', () => {
-        this.clockElement.querySelector('.output').textContent = this.getCurrentDate();
-    });
+        this.clockElement.querySelector('.show-time').addEventListener('click', () => {
+            this.clockElement.querySelector('.output').textContent = this.getCurrentDate();
+        });
 
-    this.clockElement.querySelector('.show-datetime').addEventListener('click', () => {
-        this.clockElement.querySelector('.output').textContent = this.getCurrentDateTime();
-    });
+        this.clockElement.querySelector('.show-datetime').addEventListener('click', () => {
+            this.clockElement.querySelector('.output').textContent = this.getCurrentDateTime();
+        });
 
-    this.clockElement.querySelector('.delete-clock').addEventListener('click', () => {
-        this.deleteClock();
-    });
+        this.clockElement.querySelector('.delete-clock').addEventListener('click', () => {
+            this.deleteClock();
+        });
+    }
 }

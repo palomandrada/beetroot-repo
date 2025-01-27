@@ -137,23 +137,6 @@ input {
     height: 24px;
 }
 
-.scroll {
-  text-align: center;
-}
-
-.scroll_btn {
-  display: block;
-  margin: 0 auto;
-  cursor: pointer;
-  font-family: "Josefin Sans", sans-serif;
-  color: $light;
-  font-size: 14px;
-  line-height: 26px;
-  letter-spacing: 2.8px;
-  text-transform: capitalize;
-  background-color: transparent;
-}
-
 .scroll a {
     &:hover {
       color:$accent;
