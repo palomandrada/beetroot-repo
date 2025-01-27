@@ -1,13 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <script src="https://code.jquery.com/jquery-3.7.1.slim.min.js"></script>
-  <script src="main.js"></script> 
-  
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./fontawesome/css/all.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="main.css" />
+    <meta
+      id="ConnectiveDocSignExtentionInstalled"
+      name="ConnectiveDocSignExtentionInstalled"
+      data-extension-version="1.0.7"
+    />
+    <title>FarCry 6</title>
+  </head>
+  <body>
+    <div class="page_wrapper">
+      <div class="tabs_wrapper">
+        <div class="tabs_container">
+          <button class="tab active">
+            <p class="tab_title">Information</p>
+          </button>
+          <button class="tab">
+            <p class="tab_title">Ratings Info</p>
+          </button>
+          <button class="tab">
+            <p class="tab_title">Where to buy</p>
+          </button>
+        </div>
+        <div class="information active">
+          <div class="info">
+            <div class="image">
+              <img src="img/farCry.png" alt="Far Cry 6 cover" />
+              <div class="stars">
+                <i
+                  class="fa-solid fa-star star_icon"
+                  aria-hidden="true"
+                  id="star1"
+                ></i>
+                <i
+                  class="fa-solid fa-star star_icon"
+                  aria-hidden="true"
+                  id="star2"
+                ></i>
+                <i
+                  class="fa-solid fa-star star_icon"
+                  aria-hidden="true"
+                  id="star3"
+                ></i>
+                <i
+                  class="fa-solid fa-star star_icon"
+                  aria-hidden="true"
+                  id="star4"
+                ></i>
+                <i
+                  class="fa-solid fa-star star_icon"
+                  aria-hidden="true"
+                  id="star4"
+                ></i>
+              </div>
+            </div>
+            <div class="text">
+              <div class="text_titles">
+                <div class="titles">
+                  <h1 class="title">FarCry 6</h1>
+                  <p class="subtitle">First Released Oct 6, 2021</p>
+                </div>
+                <div class="score"></div>
+              </div>
+              <div class="description">
+                <p>
+                  Far Cry 6 is a 2021 action-adventure first-person shooter game
+                  developed by Ubisoft Toronto. It is the sixth main installment
+                  in the Far Cry series and the successor Far Cry 5.
+                </p>
+              </div>
+              <div class="actions">
+                <div class="price_container">
+                  <p class="discount">20% off</p>
+                  <p class="price">$59.99</p>
+                </div>
+                <button class="main_btn">Buy it now</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="information">
+          <h1>Ratings info</h1>
+          <p>Ratings info here</p>
+        </div>
+        <div class="information">
+          <h1>Where to buy</h1>
+          <p>Where to buy information here</p>
+        </div>
+      </div>
+    </div>
+    <script src="main.js"></script>
+  </body>
 </html>
