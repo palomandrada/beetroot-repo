@@ -104,6 +104,13 @@ $('.carrousel').slick({
       ]
   });
 
+// Gallery --------------------------------------
+
+lightGallery(document.getElementById('lightgallery'), {
+     plugins: [lgZoom, lgFullscreen],
+    
+ });
+
 // Map -------------------------------------------
 
 document.addEventListener('DOMContentLoaded', () => {

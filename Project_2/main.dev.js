@@ -94,6 +94,10 @@ $('.carrousel').slick({
       dots: false
     }
   }]
+}); // Gallery --------------------------------------
+
+lightGallery(document.getElementById('lightgallery'), {
+  plugins: [lgZoom, lgFullscreen]
 }); // Map -------------------------------------------
 
 document.addEventListener('DOMContentLoaded', function () {
