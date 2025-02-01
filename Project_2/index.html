@@ -4,6 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Project 2</title>
+    <link href="dist/hamburgers.css" rel="stylesheet" />
+
     <link rel="stylesheet" href="./fontawesome/css/all.min.css" />
     <link rel="stylesheet" href="main.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -12,6 +14,14 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+      integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+      crossorigin=""
+    />
+    <link rel="stylesheet" href="slick/slick-theme.css">
+    <link rel="stylesheet" href="slick/slick.css">
   </head>
   <body>
     <div class="page_wrapper">
@@ -53,32 +63,64 @@
 
         <!-- HERO SECTION (title + background) ----------- -->
         <section class="hero header">
-          <div class="hero_container">
-            <h1 class="hero_title">Simple & Modern</h1>
-            <p class="hero_subtitle">We make the word beautiful everyday</p>
+          <div class="slideshow-container">
+            <div class="mySlides">
+              <div class="hero_container">
+                <h1 class="hero_title">Simple & Modern</h1>
+                <p class="hero_subtitle">We make the word beautiful everyday</p>
+              </div>
+              <div class="hero_container">
+                <h1 class="hero_title">Bold & Creative</h1>
+                <p class="hero_subtitle">Designing the future with passion</p>
+              </div>
+              <div class="hero_container">
+                <h1 class="hero_title">Fresh & Inspiring</h1>
+                <p class="hero_subtitle">Bringing ideas to life every day</p>
+              </div>
+              <div class="hero_container">
+                <h1 class="hero_title">Awarded & Trusted</h1>
+                <p class="hero_subtitle">
+                  Recognized excellence in every detail
+                </p>
+              </div>
+              <div class="hero_container">
+                <h1 class="hero_title">Creating since 1976</h1>
+                <p class="hero_subtitle">
+                  Decades of innovation and craftsmanship
+                </p>
+              </div>
+            </div>
+            <!-- Dots/bullets/indicators -->
+            <div class="dot-container">
+              <a class="dot" onclick="currentSlide(1)"></a>
+              <a class="dot" onclick="currentSlide(2)"></a>
+              <a class="dot" onclick="currentSlide(3)"></a>
+              <a class="dot" onclick="currentSlide(4)"></a>
+              <a class="dot" onclick="currentSlide(5)"></a>
+            </div>
           </div>
           <div class="scroll">
-            <a href="#choose_us" class="scroll_btn">
+            <a href="#section" class="scroll_btn">
               <i class="fa-solid fa-chevron-down chevron"></i>
             </a>
           </div>
         </section>
       </div>
       <!-- SECTION 1 --------------------------------------->
-      <div class="section">
+      <div class="section" id="section">
         <div class="section_title">
           <div class="line"></div>
           <h2>What we do</h2>
         </div>
         <div class="subsection">
-          <div class="subsection_container">
-            <div class="subsection_img">
+          <div class="subsection_container first">
+            <div class="subsection_img_container">
               <img
                 class="subsection_image"
                 src="img/location1.png"
                 alt="Trade Center"
               />
-              <div class="rectangle1"></div>
+              <div class="rectangle left"></div>
             </div>
             <div class="subsection_text">
               <div class="subsection_subtitle">One World</div>
@@ -95,7 +137,7 @@
               </div>
             </div>
           </div>
-          <div class="subsection_container">
+          <div class="subsection_container second">
             <div class="subsection_text">
               <div class="subsection_subtitle">International</div>
               <div class="subsection_title">Commerce Center</div>
@@ -110,22 +152,140 @@
                 <p>Hong Kong - 1588 feet</p>
               </div>
             </div>
-            <div class="subsection_img">
+            <div class="subsection_img_container">
               <img
                 class="subsection_image"
                 src="img/location2.png"
                 alt="Trade Center"
               />
-              <div class="rectangle2"></div>
+              <div class="rectangle right"></div>
             </div>
           </div>
         </div>
       </div>
       <!-- BANNER --------------------------------------->
-      <div class="background_2 banner">
+      <div class="banner background_2">
         <div class="section_title">
           <div class="line"></div>
           <h2>Latest news</h2>
+        </div>
+        <div class="carrousel">
+          <div class="slide">
+            <a href="#" class="slider_link">
+              <img src="img/banner/Image-1.png" alt="#" class="slider_img" />
+              <div class="slider_text">
+                <p class="slider_title">
+                  See the unmatched beauty of the great.
+                </p>
+                <p class="slider_subtitle">
+                  Free directories: directories are perfect for customers that
+                  are searching for...
+                </p>
+              </div>
+              <div class="slider_user">
+                <img src="img/banner/alja.png" alt="#" class="user" />
+                <div class="user_info">
+                  <p class="user_name">alja brun</p>
+                  <p class="user_date">20 Jan 2020</p>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="slide">
+            <a href="#" class="slider_link">
+              <img src="img/banner/Image-2.png" alt="" class="slider_img" />
+              <div class="slider_text">
+                <p class="slider_title">effective advertising pointers.</p>
+                <p class="slider_subtitle">
+                  Having a home based business is a wonderful asset to your
+                  life...
+                </p>
+              </div>
+              <div class="slider_user">
+                <img src="img/banner/dominic.png" alt="" class="user" />
+                <div class="user_info">
+                  <p class="user_name">dominique freeman</p>
+                  <p class="user_date">18 Dec 2019</p>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="slide">
+            <a href="#" class="slider_link">
+              <img src="img/banner/Image-2.png" alt="" class="slider_img" />
+              <div class="slider_text">
+                <p class="slider_title">Hypnotize yourself into the ghost</p>
+                <p class="slider_subtitle">
+                  There are many things that are important to catalog design...
+                </p>
+              </div>
+              <div class="slider_user">
+                <img src="img/banner/alice.png" alt="" class="user" />
+                <div class="user_info">
+                  <p class="user_name">alice ward</p>
+                  <p class="user_date">30 Nov 1019</p>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="slide">
+            <a href="#" class="slider_link">
+              <img src="img/banner/Image-1.png" alt="#" class="slider_img" />
+              <div class="slider_text">
+                <p class="slider_title">
+                  See the unmatched beauty of the great.
+                </p>
+                <p class="slider_subtitle">
+                  Free directories: directories are perfect for customers that
+                  are searching for...
+                </p>
+              </div>
+              <div class="slider_user">
+                <img src="img/banner/alja.png" alt="#" class="user" />
+                <div class="user_info">
+                  <p class="user_name">alja brun</p>
+                  <p class="user_date">20 Jan 2020</p>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="slide">
+            <a href="#" class="slider_link">
+              <img src="img/banner/Image-2.png" alt="" class="slider_img" />
+              <div class="slider_text">
+                <p class="slider_title">effective advertising pointers.</p>
+                <p class="slider_subtitle">
+                  Having a home based business is a wonderful asset to your
+                  life...
+                </p>
+              </div>
+              <div class="slider_user">
+                <img src="img/banner/dominic.png" alt="" class="user" />
+                <div class="user_info">
+                  <p class="user_name">dominique freeman</p>
+                  <p class="user_date">18 Dec 2019</p>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="slide">
+            <a href="#" class="slider_link">
+              <img src="img/banner/Image-2.png" alt="" class="slider_img" />
+              <div class="slider_text">
+                <p class="slider_title">Hypnotize yourself into the ghost</p>
+                <p class="slider_subtitle">
+                  There are many things that are important to catalog design...
+                </p>
+              </div>
+              <div class="slider_user">
+                <img src="img/banner/alice.png" alt="" class="user" />
+                <div class="user_info">
+                  <p class="user_name">alice ward</p>
+                  <p class="user_date">30 Nov 1019</p>
+                </div>
+              </div>
+            </a>
+          </div>
         </div>
       </div>
       <!-- GALLERY --------------------------------------->
@@ -153,7 +313,7 @@
       </div>
       <!-- MAP --------------------------------------->
       <div class="map_container">
-        <div class="map"></div>
+        <div class="map" id="map"></div>
       </div>
       <!-- FORM --------------------------------------->
       <div class="form_container">
@@ -214,7 +374,17 @@
         </div>
       </footer>
     </div>
-    <!-- JAVASCRIPT LINK -------------------------------->
-    <script src="main.js"></script> 
+    <!-- JAVASCRIPT LINKS -------------------------------->
+    <script
+      src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+      integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+      crossorigin=""
+    ></script>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.slim.min.js" integrity="sha256-kmHvs0B+OpCW5GVHUNjv9rOmY0IvSIRcf7zGUDTDQM8=" crossorigin="anonymous"></script>
+
+    <script type="text/javascript" src="slick/slick.min.js"></script>
+    <!-- JAVASCRIPT FILE -------------------------------->
+    <script src="main.js"></script>
   </body>
 </html>

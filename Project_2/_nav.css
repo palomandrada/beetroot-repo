@@ -9,16 +9,12 @@
 
 @media screen and (max-width: 1024px) {
   .nav_container {
-    max-width: 90%;
-  }
-}
-@media screen and (max-width: 768px) {
-  .nav_container {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
     padding: 22px 12px 10px;
+    align-items: center;
+    gap: 40px;
   }
 }
 .logo_container {
@@ -164,10 +160,9 @@
     display: none;
   }
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 820px) {
   .hamburger {
     display: flex;
-    flex-direction: row;
   }
 }
 .hamburger .divider {
@@ -239,6 +234,9 @@ i {
   padding: 10px;
   border: 1px solid rgba(255, 255, 255, 0.4);
   border-radius: 50%;
+}
+.social_icon:hover {
+  background-color: rgba(255, 255, 255, 0.2);
 }
 
 /* FOOTER -------------------------------------------- */

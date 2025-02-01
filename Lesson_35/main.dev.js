@@ -22,62 +22,84 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 // getTime()
 // setInterval(getTime, 100)
 //---
-var WorldClock =
+// class WorldClock {
+//     constructor(container, timezone, secondsHand, minutesHand, hoursHand, center) {
+//         this.container = container
+//         this.timezone = timezone
+//         this.secondHand = secondsHand
+//         this.minutesHand = minutesHand
+//         this.hoursHand = hoursHand
+//         this.center = center
+//         this.clockElement = document.createElement('div')
+//         this.clockElement.className = 'clock'
+//         this.container.appendChild(this.clockElement)
+//         this.render();
+//     }
+//     getCurrentDate() {
+//         const date = new Date().toLocaleDateString('en-US', {
+//             timeZone: this.timezone
+//         })
+//         return `Current Date: ${date}`
+//     }
+//     getCurrentDateTime() {
+//         const dateTime = new Date().toLocaleString('en-US', {
+//             timeZone: this.timezone
+//         })
+//         return `Current Date and Time: ${dateTime}`
+//     }
+//     deleteClock() {
+//         this.container.removeChild(this.clockElement);
+//     }
+//     render() {
+//         this.clockElement.innerHTML = `
+//             <p>Timezone: ${this.timezone}</p>
+//             <button class="show-time">Show Time</button>
+//             <button class="show-datetime">Show Date & Time</button>
+//             <button class="delete-clock">Delete Clock</button>
+//             <div class="output"></div>
+//         `;
+//         this.clockElement.querySelector('.show-time').addEventListener('click', () => {
+//             this.clockElement.querySelector('.output').textContent = this.getCurrentDate();
+//         });
+//         this.clockElement.querySelector('.show-datetime').addEventListener('click', () => {
+//             this.clockElement.querySelector('.output').textContent = this.getCurrentDateTime();
+//         });
+//         this.clockElement.querySelector('.delete-clock').addEventListener('click', () => {
+//             this.deleteClock();
+//         });
+//     }
+// }
+var Clock =
 /*#__PURE__*/
 function () {
-  function WorldClock(container, timezone, secondsHand, minutesHand, hoursHand, center) {
-    _classCallCheck(this, WorldClock);
+  function Clock(zone) {
+    _classCallCheck(this, Clock);
 
-    this.container = container;
-    this.timezone = timezone;
-    this.secondHand = secondsHand;
-    this.minutesHand = minutesHand;
-    this.hoursHand = hoursHand;
-    this.center = center;
-    this.clockElement = document.createElement('div');
-    this.clockElement.className = 'clock';
-    this.container.appendChild(this.clockElement);
-    this.render();
+    this.timeZone = zone;
+    this.container = document.createElement('div');
+    this.clockWrapper = document.createElement('div');
+    this.hoursHand = document.createElement('div');
+    this.minutesHand = document.createElement('div');
+    this.secondsHand = document.createElement('div');
+    this.centerEl = document.createElement('div');
+    this.secondsHand.setAttribute('id', 'second-hand');
+    this.hoursHand.setAttribute('id', 'hours-hand');
+    this.minutesHand.setAttribute('id', 'minutes-hand');
+    this.centerEl.setAttribute('id', 'center');
+    this.clockWrapper.setAttribute('id', 'clock');
   }
 
-  _createClass(WorldClock, [{
-    key: "getCurrentDate",
-    value: function getCurrentDate() {
-      var date = new Date().toLocaleDateString('en-US', {
-        timeZone: this.timezone
-      });
-      return "Current Date: ".concat(date);
-    }
-  }, {
-    key: "getCurrentDateTime",
-    value: function getCurrentDateTime() {
-      var dateTime = new Date().toLocaleString('en-US', {
-        timeZone: this.timezone
-      });
-      return "Current Date and Time: ".concat(dateTime);
-    }
-  }, {
-    key: "deleteClock",
-    value: function deleteClock() {
-      this.container.removeChild(this.clockElement);
-    }
-  }, {
-    key: "render",
-    value: function render() {
-      var _this = this;
-
-      this.clockElement.innerHTML = "\n            <p>Timezone: ".concat(this.timezone, "</p>\n            <button class=\"show-time\">Show Time</button>\n            <button class=\"show-datetime\">Show Date & Time</button>\n            <button class=\"delete-clock\">Delete Clock</button>\n            <div class=\"output\"></div>\n        ");
-      this.clockElement.querySelector('.show-time').addEventListener('click', function () {
-        _this.clockElement.querySelector('.output').textContent = _this.getCurrentDate();
-      });
-      this.clockElement.querySelector('.show-datetime').addEventListener('click', function () {
-        _this.clockElement.querySelector('.output').textContent = _this.getCurrentDateTime();
-      });
-      this.clockElement.querySelector('.delete-clock').addEventListener('click', function () {
-        _this.deleteClock();
-      });
+  _createClass(Clock, [{
+    key: "init",
+    value: function init() {
+      this.clockWrapper.innerHTML = '';
+      this.clockWrapper.append(this.hoursHand);
+      this.clockWrapper.append(this.minutesHand);
+      this.clockWrapper.append(this.secondsHand);
+      this.clockWrapper.append(this.centerEl);
+      document.querySelector('#app').append(this.clockWrapper);
     }
   }]);
 
-  return WorldClock;
+  return Clock;
 }();
