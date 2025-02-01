@@ -106,10 +106,11 @@ $('.carrousel').slick({
 
 // Gallery --------------------------------------
 
-lightGallery(document.getElementById('lightgallery'), {
-     plugins: [lgZoom, lgFullscreen],
+// lightGallery(document.getElementById('lightgallery'), {
+//      plugins: [lgZoom, lgFullscreen],
     
- });
+//  });
+
 
 // Map -------------------------------------------
 

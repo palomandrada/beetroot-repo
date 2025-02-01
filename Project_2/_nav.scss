@@ -253,14 +253,16 @@ i {
     background: url("img/footer_background.png");
     background-repeat: no-repeat;
     background-position: top;
-    position: relative;
+    background-size: cover;
+    object-fit: cover;
 }
 
 .footer_container {
     max-width: 770px;
     margin: auto;
     display: flex;
-    padding: 200px 0px;
+    padding-top: 240px;
+    padding-bottom: 230px;
     flex-direction: column;
     gap: 80px;
 }
@@ -277,3 +279,4 @@ i {
     font-weight: 400;
     line-height: normal;
 }
+
