@@ -241,11 +241,8 @@ i {
 
 /* FOOTER -------------------------------------------- */
 .footer {
-  background: url("img/footer_background.png");
-  background-repeat: no-repeat;
+  background: url("img/background-footer.png") no-repeat center/contain, linear-gradient(90deg, #55b7ff 0%, #7e5aff 100%);
   background-position: top;
-  background-size: cover;
-  object-fit: cover;
 }
 @media screen and (max-width: 480px) {
   .footer {

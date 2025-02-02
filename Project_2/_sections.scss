@@ -3,11 +3,8 @@
 /* HERO ----------------------------------------- */
 
 .background_1 {
-    background-image: url(img/hero.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    object-fit: cover;
+    background: url('img/background-hero.png') no-repeat center/cover, 
+                linear-gradient(90deg, rgba(85,183,255,1) 0%, rgba(126,90,255,1) 100%);
 }
 
 .hero_title {
@@ -341,11 +338,9 @@
 }
 
 .background_2 {
-    background-image: url(img/banner.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    object-fit: cover;
+    background: url('img/background-slider.png') no-repeat center/contain, 
+                linear-gradient(90deg, rgba(60,127,212,1) 0%, rgba(36,204,250,1) 100%);
+    background-position: bottom;
 }
 
 .banner .section_title h2 {
@@ -641,6 +636,10 @@ input {
 
     &:hover {
         background-color: rgba(186, 185, 185, 0.2);
+    }
+
+    &:focus {
+        outline: none;
     }
 
     &:focus::placeholder {

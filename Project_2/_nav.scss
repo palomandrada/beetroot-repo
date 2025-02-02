@@ -250,11 +250,9 @@ i {
 /* FOOTER -------------------------------------------- */
 
 .footer {
-    background: url("img/footer_background.png");
-    background-repeat: no-repeat;
+    background: url('img/background-footer.png') no-repeat center/contain, 
+                linear-gradient(90deg, rgba(85,183,255,1) 0%, rgba(126,90,255,1) 100%);
     background-position: top;
-    background-size: cover;
-    object-fit: cover;
     @media screen and (max-width:480px) {
         max-width: 100%;
         display: flex;

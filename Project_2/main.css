@@ -241,11 +241,8 @@ i {
 
 /* FOOTER -------------------------------------------- */
 .footer {
-  background: url("img/footer_background.png");
-  background-repeat: no-repeat;
+  background: url("img/background-footer.png") no-repeat center/contain, linear-gradient(90deg, #55b7ff 0%, #7e5aff 100%);
   background-position: top;
-  background-size: cover;
-  object-fit: cover;
 }
 @media screen and (max-width: 480px) {
   .footer {
@@ -350,11 +347,7 @@ button {
 
 /* HERO ----------------------------------------- */
 .background_1 {
-  background-image: url(img/hero.png);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  object-fit: cover;
+  background: url("img/background-hero.png") no-repeat center/cover, linear-gradient(90deg, #55b7ff 0%, #7e5aff 100%);
 }
 
 .hero_title {
@@ -695,11 +688,8 @@ button {
 }
 
 .background_2 {
-  background-image: url(img/banner.png);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  object-fit: cover;
+  background: url("img/background-slider.png") no-repeat center/contain, linear-gradient(90deg, #3c7fd4 0%, #24ccfa 100%);
+  background-position: bottom;
 }
 
 .banner .section_title h2 {
@@ -987,6 +977,9 @@ input {
 }
 input:hover {
   background-color: rgba(186, 185, 185, 0.2);
+}
+input:focus {
+  outline: none;
 }
 input:focus::placeholder {
   color: transparent;
