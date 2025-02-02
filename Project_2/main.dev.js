@@ -116,4 +116,57 @@ document.addEventListener('DOMContentLoaded', function () {
   L.marker([50.82517149319415, 4.365909362285996], {
     icon: circleIcon
   }).addTo(map).bindPopup('Come to visit us').openPopup();
+}); // Form ------------------------------------------
+
+document.getElementById("submitBtn").addEventListener("click", function (event) {
+  event.preventDefault();
+  var emailInput = document.getElementById("email");
+  var nameInput = document.getElementById("name");
+  var messageBox = document.getElementById("messageBox");
+  var email = emailInput.value.trim();
+  var name = nameInput.value.trim(); // email validation pattern 
+
+  var emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+  if (name === "") {
+    messageBox.textContent = "Please enter your name.";
+    messageBox.className = "message error-message"; // red
+
+    messageBox.style.display = "block";
+    return;
+  }
+
+  if (!emailPattern.test(email)) {
+    emailInput.value = ""; // Clear input
+
+    emailInput.placeholder = "Invalid email";
+    emailInput.classList.add("error"); // red
+
+    messageBox.textContent = "Invalid email, please enter a valid email.";
+    messageBox.className = "message error-message"; // red
+
+    messageBox.style.display = "block";
+    return;
+  } // If both fields are valid
+
+
+  emailInput.classList.remove("error");
+  messageBox.textContent = "Form submitted successfully!";
+  messageBox.className = "message success-message"; // green
+
+  messageBox.style.display = "block";
+  setTimeout(function () {
+    nameInput.value = "";
+    emailInput.value = "";
+    emailInput.placeholder = "Email";
+    messageBox.style.display = "none"; // Hide message
+  }, 3000);
+});
+document.getElementById("name").addEventListener("input", function () {
+  document.getElementById("messageBox").style.display = "none";
+});
+document.getElementById("email").addEventListener("input", function () {
+  this.placeholder = "Email";
+  this.classList.remove("error");
+  document.getElementById("messageBox").style.display = "none";
 });

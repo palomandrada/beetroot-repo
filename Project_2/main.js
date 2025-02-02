@@ -133,3 +133,58 @@ document.addEventListener('DOMContentLoaded', () => {
     .openPopup();
 })
 
+// Form ------------------------------------------
+
+document.getElementById("submitBtn").addEventListener("click", function(event) {
+  event.preventDefault(); 
+  
+  let emailInput = document.getElementById("email");
+  let nameInput = document.getElementById("name");
+  let messageBox = document.getElementById("messageBox");
+  let email = emailInput.value.trim();
+  let name = nameInput.value.trim();
+
+  // email validation pattern 
+  let emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+  if (name === "") {
+      messageBox.textContent = "Please enter your name.";
+      messageBox.className = "message error-message"; // red
+      messageBox.style.display = "block"; 
+      return; 
+  } 
+  
+  if (!emailPattern.test(email)) {
+      emailInput.value = ""; // Clear input
+      emailInput.placeholder = "Invalid email"; 
+      emailInput.classList.add("error"); // red
+      messageBox.textContent = "Invalid email, please enter a valid email."; 
+      messageBox.className = "message error-message"; // red
+      messageBox.style.display = "block"; 
+      return; 
+  }
+
+  // If both fields are valid
+  emailInput.classList.remove("error"); 
+  messageBox.textContent = "Form submitted successfully!"; 
+  messageBox.className = "message success-message"; // green
+  messageBox.style.display = "block"; 
+
+  setTimeout(() => {
+      nameInput.value = "";
+      emailInput.value = "";
+      emailInput.placeholder = "Email";
+      messageBox.style.display = "none"; // Hide message
+  }, 3000);
+});
+
+
+document.getElementById("name").addEventListener("input", function() {
+  document.getElementById("messageBox").style.display = "none"; 
+});
+
+document.getElementById("email").addEventListener("input", function() {
+  this.placeholder = "Email";
+  this.classList.remove("error");
+  document.getElementById("messageBox").style.display = "none"; 
+});

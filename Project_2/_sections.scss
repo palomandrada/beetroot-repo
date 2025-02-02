@@ -553,6 +553,14 @@
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 2;
+
+    @media screen and (max-width: 480px) {
+        position: relative;
+        top: auto;
+        left: auto;
+        max-width: 100%;
+        transform: none;
+    }
 }
 
 .info_form_container {
@@ -560,6 +568,19 @@
     flex-direction: row;
     justify-content: center;
     gap: 55px;
+
+    @media screen and (max-width: 480px) {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 30px;
+        align-items: center;
+        
+    }
+
+    @media screen and (max-width: 280px) {
+        
+    }
 }
 
 .form {
@@ -568,6 +589,11 @@
     gap: 30px;
     width: 310px;
     align-items: flex-end;
+    @media screen and (max-width:480px) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 }
 
 .info {
@@ -610,32 +636,39 @@ input {
     border: none;
     font-size: 18px;
     padding-bottom: 15px;
-    color: rgb(75, 85, 98, 0.5);
+    color: #7E5AFF;
     border-bottom: 1px solid #000;
 
     &:hover {
-        background-color: grey;
+        background-color: rgba(186, 185, 185, 0.2);
     }
 
     &:focus::placeholder {
         color: transparent;
+        color: rgb(75, 85, 98, 0.5);
     }
 
     @media screen and (max-width: 480px) {
         padding: 20px 8px;
         max-width: 340px;
         margin-bottom: 12px;
-        text-align: center;
-    }
-
-    @media screen and (max-width: 280px) {
-        padding: 20px 8px;
-        max-width: 260px;
-        margin-bottom: 12px;
-        text-align: center;
+        text-align: left;
     }
 }
 
-.form .btn {
-    margin-bottom: 0px;
+.form input.error {
+    border-color: red;
+}
+.message {
+    font-size: 14px;
+    margin-bottom: 10px;
+    text-align: center;
+    font-weight: bold;
+    display: none; 
+}
+.error-message {
+    color: red;
+}
+.success-message {
+    color: green;
 }
