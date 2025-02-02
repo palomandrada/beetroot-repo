@@ -576,7 +576,7 @@ z .slick-dots li.slick-active button:before {
   max-width: 770px;
   position: absolute;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -70%);
   z-index: 2;
 }
 @media screen and (max-width: 480px) {
