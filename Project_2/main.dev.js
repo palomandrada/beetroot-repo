@@ -95,10 +95,12 @@ $('.carrousel').slick({
     }
   }]
 }); // Gallery --------------------------------------
-// lightGallery(document.getElementById('lightgallery'), {
-//      plugins: [lgZoom, lgFullscreen],
-//  });
-// Map -------------------------------------------
+
+lightGallery(document.getElementById('lightGallery'), {
+  plugins: [lgZoom, lgThumbnail, lgFullscreen],
+  thumbnail: true,
+  speed: 500
+}); // Map -------------------------------------------
 
 document.addEventListener('DOMContentLoaded', function () {
   var map = L.map('map').setView([50.82517149319415, 4.365909362285996], 14); //coordinates + zoom level
