@@ -131,7 +131,7 @@ document.addEventListener('DOMContentLoaded', () => {
   L.marker([50.82517149319415, 4.365909362285996],{icon: circleIcon}).addTo(map)
     .bindPopup('Come to visit us')
     .openPopup();
-})
+});
 
 // Form ------------------------------------------
 
