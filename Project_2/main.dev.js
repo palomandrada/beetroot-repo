@@ -69,8 +69,8 @@ $('.carrousel').slick({
   autoplay: true,
   autoplaySpeed: 2000,
   dots: true,
-  nextArrow: '<button type="button" class="slick-next"> <img scr="img/arrow_next"/></button>',
-  prevArrow: '<button type="button" class="slick-prev"> <img scr="img/arrow_prev"/></button>',
+  nextArrow: '<button type="button" class="slick-next"> <img scr="img/arrow_next.svg"/></button>',
+  prevArrow: '<button type="button" class="slick-prev"> <img scr="img/arrow_prev.svg"/></button>',
   responsive: [{
     breakpoint: 1024,
     settings: {
